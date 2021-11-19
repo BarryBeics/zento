@@ -32,7 +32,7 @@ h2{
 
 #logo{
     margin: 20px;
-    background: url("/images/ZENTO_logo_black.png");
+    background: url("../images/ZENTO_logo_black.png");
     background-repeat: no-repeat;
     background-size: 269px 70px;
     height: 70px;
@@ -63,7 +63,7 @@ footer{
 
 .home {
     clear: left;
-    background: url("/images/m-sparc.jpeg");
+    background: url("../images/m-sparc.jpeg");
     background-size: cover;
     background-position: center;
     height: 900px;
