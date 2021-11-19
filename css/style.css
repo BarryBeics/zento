@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
+}
+
+a {
+    color: #ffc107;
+}
+
+/* headings and logo */
+h1 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #00bcd4;
+}
+
+h2{
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #f8f0df;
+}
+
+#logo{
+    margin: 20px;
+    background: url("/images/ZENTO_logo_black.png");
+    background-repeat: no-repeat;
+    background-size: 269px 70px;
+    height: 70px;
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+}
+
+.social-networks{
+    text-align: center;
+
+}
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 20px 60px;
+    color: #3a3a3a;
+}
+
+
+.home {
+    clear: left;
+    background: url("/images/m-sparc.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.text-block {
+    color: #fff;
+    background: rgba(60,60,60, 0.6);
+    padding: 20px;
+}
+
+.address {
+    margin-top: 300px;
+}
+
+.soon {
+    margin-top: 100px
+}
+
+
+
