@@ -31,11 +31,11 @@ h2{
 }
 
 #logo{
-    margin: 20px;
+    margin: 15px;
     background: url("../images/ZENTO_logo_black.png");
     background-repeat: no-repeat;
-    background-size: 269px 70px;
-    height: 70px;
+    background-size: 135px 35px;
+    height: 35px;
 }
 
 /* Footer */
@@ -76,11 +76,11 @@ footer{
 }
 
 .address {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .soon {
-    margin-top: 100px
+    margin-top: 50px
 }
 
 
