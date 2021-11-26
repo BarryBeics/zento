@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"  crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"  crossorigin=""></script>
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+    <title>Learning Leaflet JS</title>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([53.2, -4.4], 11);
+
+        L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=LHlqrAvd3VUM4yZjqFDy', { attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    
+    }).addTo(map);
+
+    var myGeoJSON = {
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-4.55449514, 53.30886996],
+                [-4.55577069, 53.29666107],
+                [-4.57263724, 53.28580894],
+                [-4.59358038, 53.29495346],
+                [-4.61306267, 53.30570541],
+                [-4.67368572, 53.31320571],
+                [-4.68003761, 53.30303763],
+                [-4.66911357, 53.29108209],
+                [-4.62126088, 53.28388297],
+                [-4.61082883, 53.27416914],
+                [-4.60941418, 53.26092505],
+                [-4.60764917, 53.24861158],
+                [-4.59763072, 53.23941948],
+                [-4.57879772, 53.24132395],
+                [-4.56488833, 53.24589877],
+                [-4.56443522, 53.25804755],
+                [-4.55826029, 53.26568527],
+                [-4.54912435, 53.26053425],
+                [-4.54562856, 53.24912701],
+                [-4.53444046, 53.23980732],
+                [-4.51014117, 53.2239188],
+                [-4.50264644, 53.21167356],
+                [-4.49928764, 53.19032633],
+                [-4.49186402, 53.18006237],
+                [-4.46428233, 53.18008131],
+                [-4.45029918, 53.17009283],
+                [-4.43902678, 53.16499506],
+                [-4.4248882, 53.16948959],
+                [-4.41305995, 53.18351817],
+                [-4.37976434, 53.19085667],
+                [-4.38169796, 53.17071974],
+                [-4.39751726, 53.1642275],
+                [-4.40738292, 53.15393517],
+                [-4.39416109, 53.1483931],
+                [-4.37077856, 53.14295619],
+                [-4.34535441, 53.14123854],
+                [-4.32214838, 53.15011046],
+                [-4.31388681, 53.14652025]
+            ]
+        },
+        "id": "81223926-b21c-4fbc-8b16-8adefd0dc2fb",
+        "properties": {
+            "name": ""
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-4.31388681, 53.14652025],
+                [-4.288912, 53.15415022],
+                [-4.27408432, 53.16567554],
+                [-4.25218507, 53.17778036],
+                [-4.2271118, 53.18633654],
+                [-4.21640831, 53.19512789],
+                [-4.21639737, 53.2064625],
+                [-4.19848477, 53.22081649],
+                [-4.16530848, 53.22782235],
+                [-4.14641758, 53.23813258],
+                [-4.09969354, 53.26295599],
+                [-4.09466763, 53.27400164],
+                [-4.0805237, 53.28632164],
+                [-4.05914252, 53.30172171],
+                [-4.16962835, 53.30085385],
+                [-4.23245345, 53.29592189],
+                [-4.24135644, 53.34131817],
+                [-4.27311589, 53.35851161],
+                [-4.29320148, 53.37697834],
+                [-4.291913, 53.40525687],
+                [-4.33508345, 53.4136669],
+                [-4.38081792, 53.4198231],
+                [-4.41985144, 53.42115849],
+                [-4.4585747, 53.41956115],
+                [-4.48973516, 53.41423196],
+                [-4.55240944, 53.40307574],
+                [-4.56438495, 53.39647516],
+                [-4.55875702, 53.36110392],
+                [-4.56999995, 53.33168692],
+                [-4.55449514, 53.30886996]
+            ]
+        },
+        "id": "9aa5d199-f9f9-4e8f-a09b-8ed7288162b8",
+        "properties": {
+            "name": "loop"
+        }
+    }]
+}
+    /*
+    var runnerIcon = L.icon ({
+        iconUrl: '/images/runner.png',
+        iconSize: [30,30],
+        iconAnchor: [22,94],
+        popupAnchor: [12, -90]
+    }) */
+    
+    var runnerIcon = L.Icon.extend({
+        options: {
+            iconSize: [30,30],
+            iconAnchor: [10,10],
+            popupAnchor: [5, 5]
+        }
+    })
+
+    var oneIcon = new runnerIcon({iconUrl: '/images/runner.png'}),
+        twoIcon = new runnerIcon({iconUrl: '/images/runner.png'}),
+        threeIcon = new runnerIcon({iconUrl: '/images/runner.png'})
+        fourIcon = new runnerIcon({iconUrl: '/images/runner.png'}),
+        fiveIcon = new runnerIcon({iconUrl: '/images/runner.png'})
+        sixIcon = new runnerIcon({iconUrl: '/images/runner.png'}),
+        sevenIcon = new runnerIcon({iconUrl: '/images/runner.png'})
+    
+        var marker = L.marker([53.39647516, -4.56438495],{icon:oneIcon}).addTo(map);
+        var marker = L.marker([53.30085385, -4.16962835],{icon:twoIcon}).addTo(map);
+        var marker = L.marker([53.16567554, -4.27408432],{icon:threeIcon}).addTo(map);
+        var marker = L.marker([53.36110392, -4.55875702],{icon:fourIcon}).addTo(map);
+        var marker = L.marker([53.37697834, -4.41985144],{icon:fiveIcon}).addTo(map);
+        var marker = L.marker([53.22081649, -4.19848477],{icon:sixIcon}).addTo(map);
+        var marker = L.marker([53.19512789, -4.21640831],{icon:sevenIcon}).addTo(map);
+
+        marker.bindPopup("<b> Hello Simon! </b><br> I'm a active commuter.").openPopup();
+
+        L.geoJSON(myGeoJSON).addTo(map);
+    </script>
+</body>
+
+</html>
