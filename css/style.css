@@ -8,8 +8,12 @@
 
 body{
     font-family: Lato, sans-serif;
-    color: #3a3a3a;
+    color: #3a3a3a;    
+    background: url("../images/Pedal-power.png");
+    background-size: cover;
+    background-position: center;
 }
+
 
 a {
     color: #ffc107;
@@ -20,7 +24,7 @@ h1 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #00bcd4;
+    color: #ffc107;
 }
 
 h2{
@@ -28,20 +32,106 @@ h2{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #f8f0df;
+    font-size: 1.4rem;
 }
 
-#logo{
-    margin: 15px;
-    background: url("../images/ZENTO_logo_black.png");
-    background-repeat: no-repeat;
-    background-size: 135px 35px;
-    height: 35px;
+h3{
+    
+    color: #f8f0df;
+    font-size: 16px;
+    font-weight: 300;
 }
+
+.logo{
+    margin: 15px;
+    width: 600px;
+    height: 122px;
+}
+
+.book{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.book img{
+    text-align: center;
+    height: 200px;
+    width: 152px;
+}
+
+.row{
+    margin: 0px;
+
+}
+
+.block {
+    margin: 50px
+}
+
+
+/* Form */
+.form-section {
+    clear: left;
+    background: url("../images/Pedal-power.png");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+    color: #fff;
+    background: rgba(60,60,60, 0.6);
+   
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+
+}
+
+.text-input {
+    background-color: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+} 
+
+.text-input a:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button a:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
+
+
 
 /* Footer */
 
 footer{
-    height: 100px;
+    height: 150px;
+    color: #f8f0df;
+    background: rgba(194, 69, 45, 0.8);
+    padding: 15px;
+    
 }
 
 .social-networks{
@@ -56,32 +146,21 @@ footer{
 .social-networks i{
     font-size: 160%;
     margin: 1%;
-    padding: 20px 60px;
-    color: #3a3a3a;
+    padding: 20px 35px;
+    color: #f8f0df;
 }
 
 
-.home {
-    clear: left;
-    background: url("../images/m-sparc.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 900px;
+.header-block {
+    background: rgba(194, 69, 45, 0.8);
+    padding: 5px 15px;
 }
 
 .text-block {
     color: #fff;
-    background: rgba(60,60,60, 0.6);
+    background: rgba(49, 45, 44, 0.7);
     padding: 20px;
+    
 }
-
-.address {
-    margin-top: 200px;
-}
-
-.soon {
-    margin-top: 50px
-}
-
 
 
