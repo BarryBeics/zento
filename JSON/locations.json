@@ -1,0 +1,37 @@
+[{
+        "zone": 1,
+        "longitude": 53.19512789,
+        "latitude": -4.21640831
+    },
+    {
+        "zone": 2,
+        "longitude": 53.22081649,
+        "latitude": -4.19848477
+    },
+    {
+        "zone": 3,
+        "longitude": 53.37697834,
+        "latitude": -4.41985144
+    },
+    {
+        "zone": 4,
+        "longitude": 53.36110392,
+        "latitude": -4.55875702
+    },
+    {
+        "zone": 5,
+        "longitude": 53.16567554,
+        "latitude": -4.27408432
+    },
+    {
+        "zone": 6,
+        "longitude": 53.30085385,
+        "latitude": -4.16962835
+    },
+    {
+        "zone": 7,
+        "longitude": 53.39647516,
+        "latitude": -4.56438495
+    }
+
+]

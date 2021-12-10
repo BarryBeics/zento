@@ -13,12 +13,21 @@
             right: 0;
         }
     </style>
-    <title>Learning Leaflet JS</title>
+    <title>Anglesey</title>
 </head>
 
 <body>
     <div id="map"></div>
+    <script src=user_data.js></script>
+    <script type="text/javascript" src="JSON/strava_data.json"></script>
+
+  
+    
     <script>
+
+    
+
+
         var map = L.map('map').setView([53.2, -4.4], 11);
 
         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=LHlqrAvd3VUM4yZjqFDy', { attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
@@ -141,7 +150,7 @@
         fourIcon = new runnerIcon({iconUrl: '/zento/images/runner.png'}),
         fiveIcon = new runnerIcon({iconUrl: '/zento/images/runner.png'})
         sixIcon = new runnerIcon({iconUrl: '/zento/images/runner.png'}),
-        sevenIcon = new runnerIcon({iconUrl: '/zento/images/runner.png'})
+        sevenIcon = new runnerIcon({iconUrl: '/zento/images/baz-at-desk.png'})
     
         var marker = L.marker([53.39647516, -4.56438495],{icon:oneIcon}).addTo(map);
         var marker = L.marker([53.30085385, -4.16962835],{icon:twoIcon}).addTo(map);
