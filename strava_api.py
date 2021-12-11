@@ -16,12 +16,14 @@ payload = {
     'f': 'json'
 }
 
-#print("Requesting Token...\n")
+print("Requesting Token...\n")
 res = requests.post(auth_url, data=payload, verify=False)
 access_token = res.json()['access_token']
-#print("Access Token = {}\n".format(access_token))
+print("Access Token = {}\n".format(access_token))
 
 ################################## RETRIEVE DATA FROM STRAVA  ##############################################
+
+#maybe the code should look through past activities until its find last known recorded id
 
 header = {'Authorization': 'Bearer ' + access_token}
 param = {'per_page': 200, 'page': 1}
@@ -39,12 +41,12 @@ new_data = 0
 
 with open('JSON/strava_data.json') as json_file:
     current_distance = json.load(json_file)
-    print(round(current_distance[0]['distance'],1), 'Km distance so far')
+    print(round(current_distance['distance'],1), 'Km distance so far')
 
 
-last_activity_id = current_distance[0]['activity_id']
+last_activity_id = current_distance['activity_id']
 #print(last_activity_id)
-new_distance = round(float(current_distance[0]['distance']) + float(new_distance),1)
+new_distance = round(float(current_distance['distance']) + float(new_distance),1)
 print(new_distance, 'Km is the new total ditance')
 print('\n')
 
@@ -55,7 +57,7 @@ print('\n')
 zone = 0
 
 #ditance range for each zone
-zones = {1:[0,13], 2:[13,26], 3:[26,39], 4:[39,50], 5:[50,71], 6:[71,90], 7:[90,100]}
+zones = {1:[0,4], 2:[4,8], 3:[8,12], 4:[12,16], 5:[16,20], 6:[20,24], 7:[24,28]}
 
 for x in range(7):
     i = x+1
@@ -69,17 +71,25 @@ print(zone_update)
 
 with open('JSON/locations.json') as json_file:
     json_string = json.load(json_file)
-    print(json_string[zone]['longitude'])
-    print(json_string[zone]['latitude'])
+    latitude = json_string[zone]['latitude']
+    longitude = json_string[zone]['longitude']
 
+################################## CHECK ACTIVITY TYPE  ##############################################
+
+activity_name = my_dataset[0]["name"]
+
+valid_text = ["Run", "commute", "Commute", "COMMUTE"]
+email_contains_service = any(name in activity_name for name in valid_text)
+
+print(email_contains_service)
 
 ################################## CHECK IF ITS A NEW ACTIVITY  ##############################################
-strava_data = []
+
 if activity_id != last_activity_id:
-    distance_record = {'distance': new_distance, 'activity_id': activity_id, 'zone': zone_update}
-    strava_data.append(distance_record)
+    distance_record = {'distance': new_distance, 'activity_id': activity_id, 'zone': zone_update, 'latitude': latitude, 'longitude': longitude }
+    
     print('New activity to record')
-    json_strava_data = json.dumps(strava_data, indent = 2)
+    json_strava_data = json.dumps(distance_record, indent = 2)
     with open('JSON/strava_data.json', 'w') as f:
         f.write(json_strava_data)
     

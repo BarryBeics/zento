@@ -13,7 +13,10 @@ body{
     background-size: cover;
     background-position: center;
 }
-
+#map {
+    height: 600px;
+    width: 600px;
+}
 
 a {
     color: #ffc107;
