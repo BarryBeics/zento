@@ -158,7 +158,7 @@
         getlocation();
 
         async function getlocation() {
-            const response = await fetch("./JSON/strava_data.json");
+            const response = await fetch("zento/JSON/strava_data.json");
             const data = await response.json();
             const {distance, zone, latitude, longitude} = data;
 
@@ -182,25 +182,25 @@
         })
 /* examples of multiple icons will need a loop to pull these in from another file */
         var oneIcon = new runnerIcon({
-                iconUrl: './images/runner-red.png'
+                iconUrl: 'zento/images/runner-red.png'
             }),
             twoIcon = new runnerIcon({
-                iconUrl: './images/runner-d-blue.png'
+                iconUrl: 'zento/images/runner-d-blue.png'
             }),
             threeIcon = new runnerIcon({
-                iconUrl: './images/runner-green.png'
+                iconUrl: 'zento/images/runner-green.png'
             }),
             fourIcon = new runnerIcon({
-                iconUrl: './images/runner-orange.png'
+                iconUrl: 'zento/images/runner-orange.png'
             }),
             fiveIcon = new runnerIcon({
-                iconUrl: './images/runner-l-blue.png'
+                iconUrl: 'zento/images/runner-l-blue.png'
             }),
             sixIcon = new runnerIcon({
-                iconUrl: './images/runner-yellow.png'
+                iconUrl: 'zento/images/runner-yellow.png'
             }),
             sevenIcon = new runnerIcon({
-                iconUrl: './images/runner-pink.png'
+                iconUrl: 'zento/images/runner-pink.png'
             })
 
         var marker = L.marker([53.39647516, -4.56438495], {
