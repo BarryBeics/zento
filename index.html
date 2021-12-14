@@ -43,15 +43,35 @@
              <!-- Second of 2 columns -->
             <div class="col-md-5">
                 <div class="block">
-                <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/">
-                    <h2>DOWNLOAD MY FREE BOOK!</h2>
-                    <div class="book"><img src="/zento/images/endless-energy.png" alt=""></div>
-                    <label for="fname">First Name</label>
-                    <input type="text" class="text-input" id="fname" name="first_name" required />
-                    <label for="email">Email Address</label>
-                    <input id="email" class="text-input" type="email" name="email_address" required />
-                    <input type="submit" class="join-button" value="DOWNLOAD NOW!" />
-                </form>
+                
+                <form method="post" action="http://activecommuters-com.stackstaging.com/wp-content/plugins/membermouse/api/webform.php">
+                    <table>
+                    <tr>
+                      <td>Email</td>
+                      <td><input type='text' name='email' /></td>
+                    </tr>
+                    <tr>
+                      <td>Username</td>
+                      <td><input type='text' name='username' /></td>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td><input type='password' name='password' /></td>
+                    </tr>
+                    <tr>
+                      <td>First Name</td>
+                      <td><input type='text' name='first_name' /></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                      <input type='submit' name='submit' value='Sign Up' />
+                      <input type='hidden' name='membership_level' value='1' />
+                      </td>
+                    </tr>
+                    </table>
+                    </form>
+
             </div>
         </div>
     </div>

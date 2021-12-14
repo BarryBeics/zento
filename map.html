@@ -32,7 +32,7 @@
         getBaz();
 
         async function getBaz() {
-            const response = await fetch('./images/baz-at-desk.png');
+            const response = await fetch('images/baz-at-desk.png');
             const blob = await response.blob();
             document.getElementById('baz').src = URL.createObjectURL(blob);
         }
@@ -41,7 +41,7 @@
     
       <script>
           var myIcon = L.icon ({
-            iconUrl: './images/baz-at-desk.png',
+            iconUrl: '/images/baz-at-desk.png',
             iconSize: [30,30],
             iconAnchor: [15,15],
             popupAnchor: [12, -90]
@@ -158,7 +158,7 @@
         getlocation();
 
         async function getlocation() {
-            const response = await fetch("zento/JSON/strava_data.json");
+            const response = await fetch("./JSON/strava_data.json");
             const data = await response.json();
             const {distance, zone, latitude, longitude} = data;
 
@@ -182,25 +182,25 @@
         })
 /* examples of multiple icons will need a loop to pull these in from another file */
         var oneIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-red.png'
+                iconUrl: '/images/runner-red.png'
             }),
             twoIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-d-blue.png'
+                iconUrl: '/images/runner-d-blue.png'
             }),
             threeIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-green.png'
+                iconUrl: '/images/runner-green.png'
             }),
             fourIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-orange.png'
+                iconUrl: '/images/runner-orange.png'
             }),
             fiveIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-l-blue.png'
+                iconUrl: '/images/runner-l-blue.png'
             }),
             sixIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-yellow.png'
+                iconUrl: '/images/runner-yellow.png'
             }),
             sevenIcon = new runnerIcon({
-                iconUrl: 'zento/images/runner-pink.png'
+                iconUrl: '/images/runner-pink.png'
             })
 
         var marker = L.marker([53.39647516, -4.56438495], {
