@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
-*{
-    margin:0;
-    padding:0;
-    border:0;
-}
-
-body{
-    font-family: Lato, sans-serif;
-    color: #3a3a3a;    
-    background: url("../images/Pedal-power.png");
-    background-size: cover;
-    background-position: center;
-}
-#map {
-    height: 600px;
-    width: 600px;
-}
-
-a {
-    color: #ffc107;
-}
-
 /* headings and logo */
 h1 {
     font-family: Oswald, sans-serif;
@@ -39,6 +17,14 @@ h2{
 }
 
 h3{
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #404040;
+    font-size: 1.4rem;
+}
+
+h4{
     
     color: #f8f0df;
     font-size: 16px;
@@ -51,119 +37,53 @@ h3{
     height: 122px;
 }
 
-.book{
+.graphic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.text-center {
     text-align: center;
-    margin: 0px auto;
+    padding: 20px;
 }
 
-.book img{
-    text-align: center;
-    height: 200px;
-    width: 152px;
+.text-vertical-center {
+    padding: 170px 0 10px 0;
+    
+  }
+
+img {
+    width: 100%;
+    
 }
 
-.row{
-    margin: 0px;
-
+.light-grey-bg {
+    background-color: #d8d5cc;
 }
 
-.block {
-    margin: 50px
+.red-bg {
+    background-color: #864744;
 }
 
+.grey-bg {
+    background-color: #404040;
+}
 
-/* Form */
-.form-section {
+a {
+    
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #f8f0df;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+header {
     clear: left;
-    background: url("../images/Pedal-power.png");
+    background: url("../images/mock-up-landing-section-1.jpeg");
     background-size: cover;
     background-position: center;
     height: 900px;
 }
-
-.signup-form {
-    color: #fff;
-    background: rgba(60,60,60, 0.6);
-   
-    left: 10%;
-    padding: 30px;
-}
-
-.signup-form > h2 {
-    color: #fafafa;
-    margin-bottom: 20px;
-
-}
-
-.text-input {
-    background-color: transparent;
-    color: #fafafa;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-} 
-
-.text-input a:hover {
-    border-color: #f16c6b;
-}
-
-.join-button {
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 100%;
-    background-color: #f16c6b;
-    color: #fafafa;
-    display: block;
-}
-
-.join-button a:hover {
-    background-color: #fafafa;
-    color: #f16c6b;
-}
-
-
-
-/* Footer */
-
-footer{
-    height: 150px;
-    color: #f8f0df;
-    background: rgba(194, 69, 45, 0.8);
-    padding: 15px;
-    
-}
-
-.social-networks{
-    text-align: center;
-
-}
-
-.social-networks li{
-    display: inline;
-}
-
-.social-networks i{
-    font-size: 160%;
-    margin: 1%;
-    padding: 20px 35px;
-    color: #f8f0df;
-}
-
-
-.header-block {
-    background: rgba(194, 69, 45, 0.8);
-    padding: 5px 15px;
-}
-
-.text-block {
-    color: #fff;
-    background: rgba(49, 45, 44, 0.7);
-    padding: 20px;
-    
-}
-
-
