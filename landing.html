@@ -17,7 +17,7 @@
 <header>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4"><img src="/zento/images/Active_Commuters.png"  alt="logo"></div>
+        <div class="col-4"><img src="/zento/images/Active_Commuters_cream.png"  alt="logo"></div>
         <div class="col"></div>
         <div class="col-4 text-center"><a class="btn btn-danger" href="#Sign_Up" role="button">Sign Up</a></div>
     </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="row">
         <div class="col"></div>
-        <div class="col-8">Discover A Unique Way To Record & Reward Your Rides, Runs & Walks</div>
+        <div class="col-8 text-center">Discover A Unique Way To Record & Reward Your Rides, Runs & Walks</div>
         <div class="col"></div>
     </div>
     <div class="row">
@@ -154,9 +154,27 @@
         <div class="col-sm-12 col-md-6"><img src="/zento/images/e-book.png" alt=""></div>
         <div class="col-sm-12 col-md-6">
             <div class="row"> <div class="col">Sign up below and help shape the future of Active Commuters plus get our FREE REPORT with tips on staying energised and productive every morning!</div></div>
-            <div class="row"> <div class="col-2"> <h2 id="Sign_Up">SIGN UP FORM</h2>
+            <div class="row"> <div class="col-2"> <h2 id="Sign_Up"></h2>
 <!-- MEMBERMOUSE FORM-->
-           
+<form method="post" action="http://activecommuters-com.stackstaging.com/wp-content/plugins/membermouse/api/webform.php">
+    <table>
+    <tr>
+        <td>First Name</td>
+        <td><input type='text' name='first_name' /></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type='text' name='email' /></td>
+    </tr>
+   
+      <td></td>
+      <td>
+      <input class="btn btn-danger" type='submit' name='submit' value='Sign Up & Download Report' />
+      <input type='hidden' name='membership_level' value='1' />
+      </td>
+    </tr>
+    </table>
+    </form>
             </div></div>
             <div class="row"> <div class="col"> <p>We take your privacy seriously and will never spam you,  share or sell your data. You can also unsubscribe from emails any time in 1 click. See PRIVACY for full details</p> </div></div>
         </div>
