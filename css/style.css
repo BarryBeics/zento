@@ -5,7 +5,8 @@ h1 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #ffc107;
+    color: #ffffff;
+    
 }
 
 h2{
@@ -59,16 +60,8 @@ img {
     
 }
 
-.light-grey-bg {
-    background-color: #d8d5cc;
-}
-
-.red-bg {
-    background-color: #864744;
-}
-
-.grey-bg {
-    background-color: #404040;
+p {
+    color: #ffffff;
 }
 
 a {
@@ -80,10 +73,69 @@ a {
     text-decoration: none;
 }
 
+.blk-bg {
+    background-color: rgba(0, 0, 0);
+}
+/* SECTION #1: HEADER */
+
 header {
     clear: left;
     background: url("../images/mock-up-landing-section-1.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    height: 400px;
+}
+
+header .col-12 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION #2: BULLET MESSAGES */
+
+.bullet-messages {
+
+}
+
+.bullet-messages .row {
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION #3: THE PROBLEM */
+
+.the-problem {
+    clear: left;
+    background: url("../images/mock-up-landing-section-3.jpeg");
+    background-size: cover;
+    background-position: center top;
     height: 900px;
+}
+
+.the-problem .col-12 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* SECTION #4: ACTIVITY */
+
+.activity {
+    
+}
+/* SECTION #5: OUR VISION */
+
+.our-vision {
+    
+}
+/* SECTION #6: FAQ */
+
+
+.faq {
+    
+}
+/* SECTION #7: FREEBIE */
+
+.freebie {
+    
+}
+/* SECTION #8: FOOTER */
+
+.footer {
+    
 }
