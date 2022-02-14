@@ -165,10 +165,13 @@ a {
 
 @media only screen and (max-width: 1600px) {
 
+    .media {
+        background-color: #a72c2c;
+    }
 
     h1 {
         font-size: 50px;
-        color: #a72c2c;
+
    }
    
    
@@ -286,6 +289,9 @@ header .overlay-bg-padding {
   @media only screen and (max-width: 992px) 
  {
 
+    .media {
+        background-color: #5052a5;
+    }
 
     h1 {
         font-size: 30px;
@@ -406,6 +412,10 @@ header .overlay-bg-padding {
 /* ------------- Media Queries  ----------- Mobile only */
 
 @media only screen and (max-width: 576px) {
+
+    .media {
+        background-color: #26a52d;
+    }
 
     h1 {
          font-size: 22px;
