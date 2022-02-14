@@ -1,35 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
 
 /* headings and logo */
 h1 {
-    font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #ffffff;
     
 }
 
 h2{
-    font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #f8f0df;
     font-size: 1.4rem;
 }
 
 h3{
-    font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #404040;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 h4{
-    
-    color: #f8f0df;
     font-size: 16px;
     font-weight: 300;
+    padding: 20px;
 }
 
 .logo{
@@ -42,16 +34,18 @@ h4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    font-size: 90px;
+    text-align: center;
 }
 
-.text-center {
-    text-align: center;
+
+.sign-up {
     padding: 20px;
+    text-align: center;
 }
 
 .text-vertical-center {
-    padding: 170px 0 10px 0;
+    padding: 50px 0 10px 0;
     
   }
 
@@ -61,33 +55,113 @@ img {
 }
 
 p {
-    color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.btn-default {
+background-color: #eebe4b;
+color:#050100;
+border-color: #050100;
+
 }
 
 a {
-    
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #f8f0df;
     font-size: 0.8rem;
     text-decoration: none;
 }
+/* background colours */
 
 .blk-bg {
     background-color: rgba(0, 0, 0);
+    padding: 20px;
 }
+
+.white-bg {
+    background-color: rgb(248, 248, 248);
+}
+
+.record-bg {
+    background-color: #e7e3db;
+    padding: 20px 5px 15px 5px;
+
+}
+
+.reward-bg {
+    background-color: #d8d5cc;
+    padding: 20px 5px 15px 5px;
+
+}
+
+.repeat-bg {
+    background-color: #d4cfc5;
+    padding: 20px 5px 15px 5px;
+}
+
+
+
+  /* ------------- Media Queries  --------- -----*/
+
+  @media only screen and (min-width: 768px) {
+
+    .record-bg {
+        padding: 20px;
+    }
+    
+    .reward-bg {
+        padding: 20px;
+    }
+    
+    .repeat-bg {
+        padding: 20px;
+    }
+
+
+
+
+}
+
+/* ------------- Media Queries  -----------  */
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+
+/* ------------- Media Queries  ----------- Mobile only */
+
+@media only screen and (max-width: 576px) {
+    .activity i {
+        font-size: 75px;
+    }
+
+}
+
 /* SECTION #1: HEADER */
 
 header {
     clear: left;
-    background: url("../images/mock-up-landing-section-1.jpeg");
+    background: url("../images/bike.jpg");
     background-size: cover;
     background-position: center top;
-    height: 400px;
+    min-height: 400px;
 }
 
 header .col-12 {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #f5f5f5;
+}
+
+header p {
+    color: #f5f5f5;
+    padding-bottom: 100px;
 }
 
 /* SECTION #2: BULLET MESSAGES */
@@ -96,46 +170,164 @@ header .col-12 {
 
 }
 
-.bullet-messages .row {
-background-color: rgba(0, 0, 0, 0.3);
+.overlay-bg-padding {
+    padding: 20px 0px 0px 0px;
+}
+
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* SECTION #3: THE PROBLEM */
 
 .the-problem {
     clear: left;
-    background: url("../images/mock-up-landing-section-3.jpeg");
+    background: url("../images/pollution.jpg");
     background-size: cover;
     background-position: center top;
-    height: 900px;
+    min-height: 400px;
 }
 
 .the-problem .col-12 {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-/* SECTION #4: ACTIVITY */
-
-.activity {
+    
     
 }
+
+.the-problem h1 {
+    padding: 100px 10px 10px 10px;
+    color: #f5f5f5;
+}
+
+.the-problem li {
+    color: #f5f5f5;
+}
+
+.the-problem ul {
+    padding-bottom: 150px;
+}
+
+/* SECTION #4: ACTIVITY */
+
+.quote p {
+    color: #f5f5f5;
+}
+
+/* SECTION #4: ACTIVITY */
+
+.activity p {
+    color: #050100;
+}
+
+
+
 /* SECTION #5: OUR VISION */
 
 .our-vision {
-    
+    clear: left;
+    background: url("../images/change.jpg");
+    background-size: cover;
+    background-position: center top;
+    min-height: 400px;
 }
-/* SECTION #6: FAQ */
+
+.our-vision h1 {
+    color: #f8f0df;
+    padding-top: 100px;
+}
+
+.our-vision p {
+    color: #f8f0df;
+}
+
+/* SECTION #6: FREEBIE */
+
+.freebie {
+    clear: left;
+    background: url("../images/e-book.png");
+    background-size: cover;
+    background-position: center top;
+    min-height: 400px;
+}
+
+
+.freebie h1, p {
+    color: #050100;
+}
+
+/* SECTION #7: FAQ */
 
 
 .faq {
     
 }
-/* SECTION #7: FREEBIE */
 
-.freebie {
-    
+.accordion-body {
+    background-color: #e7e3db;
 }
+
+
+.accordion-button {
+    background-color: #d4cfc5;
+}
+
+
+
+
 /* SECTION #8: FOOTER */
 
-.footer {
-    
+.footer p {
+    color: #050100;
 }
+
+.footer p::before {
+    color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+/* FORM */
+.container {
+    max-width: 960px;
+    background-color: #f8f8f8;
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  .border-top-gray { border-top-color: #adb5bd; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+  .lh-condensed { line-height: 1.25; }
+
+  /** FORM CONTAINER **/
+#mm-form-container table {
+	width: 100%;
+	cellspacing: 10;	
+}
+
+#mm-form-container td {
+	vertical-align: top;
+	font-size: 12px;	
+}
+
+#mm-form-container .short-text {
+	width: 120px;
+}
+
+#mm-form-container .medium-text {
+	width: 300px;
+}
+
+#mm-form-container .long-text {
+	width: 400px;
+}
+
+
+
+
+
+
