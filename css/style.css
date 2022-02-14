@@ -160,12 +160,134 @@ a {
 .blk-bg {
     background-color: rgba(0, 0, 0);
 }
+/* ------------- Media Queries DESKTOP --------- -----*/
+
+@media only screen and (max-width: 3500px) {
+  
+    .btn-media {
+        background-color: #2ca3a7;
+    }
+
+    h1 {
+        font-size: 50px;
+
+   }
+   
+   
+   h3{
+       font-size: 24px;
+   }
+   
+   p {
+       font-size: 19px;
+   }
+
+   .sign-up {
+       padding: 25px;
+       text-align: center;
+   }
+   
+   .text-vertical-center {
+       padding: 80px 0 10px 0;
+       
+     }
+   
+   img {
+       width: 100%;
+       
+   }
+
+
+/* SECTION #1: HEADER */
+
+header {
+   min-height: 600px;
+}
+
+header p {
+   padding-bottom: 230px;
+}
+
+header .overlay-bg-padding {
+   padding: 20px 0px 0px 0px;
+}
+
+/* SECTION #2: BULLET MESSAGES */
+
+.record-bg {
+    padding: 20px;
+}
+
+.reward-bg {
+    padding: 20px;
+}
+
+.repeat-bg {
+    padding: 20px;
+}
+
+/* SECTION #3: THE PROBLEM */
+
+.the-problem {
+   min-height: 350px;
+}
+
+.the-problem h1 {
+   padding: 80px 10px 10px 10px;
+}
+
+.the-problem ul {
+   padding-bottom: 100px;
+}
+
+.quote p {
+    padding: 20px;
+}
+
+/* SECTION #4: ACTIVITY */
+.activity i {
+   font-size: 140px;
+   padding-bottom: 20px;
+}
+
+/* SECTION #5: OUR VISION */
+
+.our-vision {
+   min-height: 400px;
+}
+
+.our-vision h1 {
+   padding: 10px 10px 10px 10px;
+}
+
+/* SECTION #6: FREEBIE */
+
+.freebie {
+   min-height: 400px;
+}
+
+
+
+.freebie {
+    clear: left;
+    background: url("../images/e-book.png");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+/* SECTION #7: FAQ */
+
+
+/* SECTION #8: FOOTER */
+
+}
 
 /* ------------- Media Queries DESKTOP --------- -----*/
 
 @media only screen and (max-width: 1600px) {
-
-    .media {
+  
+    .btn-media {
         background-color: #a72c2c;
     }
 
@@ -289,7 +411,7 @@ header .overlay-bg-padding {
   @media only screen and (max-width: 992px) 
  {
 
-    .media {
+    .btn-media { 
         background-color: #5052a5;
     }
 
@@ -413,7 +535,7 @@ header .overlay-bg-padding {
 
 @media only screen and (max-width: 576px) {
 
-    .media {
+    .btn-media { 
         background-color: #26a52d;
     }
 
