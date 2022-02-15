@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 
 /* Font family & Sizing set here */
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1, h3, p, li, a {
@@ -24,7 +24,7 @@ h1, h3, p, li, a {
 
 header {
     clear: left;
-    background: url("../images/bike.jpg");
+    background: url("../images/cyclist-pov.jpeg");
     background-size: cover;
     background-position: center top;
 
@@ -66,9 +66,9 @@ header p {
 
 .the-problem {
     clear: left;
-    background: url("../images/pollution.jpg");
+    background: url("../images/car-pov.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: left bottom;
 }
 
 .the-problem h1 {

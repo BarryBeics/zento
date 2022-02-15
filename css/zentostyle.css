@@ -24,7 +24,7 @@ h1, h3, p, li, a {
 
 header {
     clear: left;
-    background: url("../images/bike.jpg");
+    background: url("../images/header.png");
     background-size: cover;
     background-position: center top;
 
@@ -36,7 +36,7 @@ header .col-12 {
 
 header h1 {
     color: #f5f5f5;
-}
+} 
 
 header p {
     color: #f5f5f5;
@@ -66,7 +66,7 @@ header p {
 
 .the-problem {
     clear: left;
-    background: url("../images/pollution.jpg");
+    background: url("../images/desk.png");
     background-size: cover;
     background-position: center top;
 }
@@ -79,8 +79,23 @@ header p {
     color: #050100;
 }
 
+.how-it-works {
+    clear: left;
+    background: url("../images/Q2QScreenshot.png");
+    background-size: cover;
+    background-position: center top;
+}
 
-/* SECTION #4: ACTIVITY */
+.how-it-works h1 {
+    color: #050100;
+}
+
+.how-it-works li {
+    color: #050100;
+}
+
+
+/* SECTION #4: HOW IT WORKS */
 .graphic {
     display: block;
     margin-left: auto;
@@ -250,8 +265,8 @@ header .overlay-bg-padding {
    padding-bottom: 320px;
 }
 
-.quote p {
-    padding: 40px;
+.how-it-works p {
+    padding: 400px;
 }
 
 /* SECTION #4: ACTIVITY */
@@ -383,8 +398,8 @@ header .overlay-bg-padding {
    padding-bottom: 200px;
 }
 
-.quote p {
-    padding: 40px;
+.how-it-works p {
+    padding: 300px;
 }
 
 /* SECTION #4: ACTIVITY */
@@ -513,8 +528,8 @@ header .overlay-bg-padding {
    padding-bottom: 230px;
 }
 
-.quote p {
-    padding: 20px;
+.how-it-works p {
+    padding: 200px;
 }
 
 /* SECTION #4: ACTIVITY */
@@ -652,8 +667,8 @@ header .overlay-bg-padding {
     font-size: 75px;
 }
 
-.quote p {
-    padding: 10px;
+.how-it-works p {
+    padding: 100px;
 }
 
 /* SECTION #5: OUR VISION */
