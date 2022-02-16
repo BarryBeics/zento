@@ -783,12 +783,17 @@ footer p {
 }
 
 
+.form-control {
+    margin: 5px;
+}
 
-
+.form-button {
+    margin: 5px 0px 0px 100px;
+}
 
 .my-form-style {
-    padding: 10px;
     width: 90%;
+    margin: auto;
 }
 
 
