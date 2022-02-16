@@ -1,61 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 /* Font family & Sizing set here */
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2f2f2f;
 }
 
 h1, h3, p, li, a {
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 /* ------------- COLORS & BACKGROUND IMAGES ------------- */
 
 .btn-default {
-    background-color: #eebe4b;
-    color:#050100;
-    border-color: #050100;
+    background-color: #fe6f27;
+    color: #2f2f2f;
+    border-color: 2f2f2f;
     
     }
 
-/* SECTION #1: HEADER */
-
 header {
-    clear: left;
-    background: url("../images/bike.jpg");
-    background-size: cover;
-    background-position: center top;
-
-}
-
-header .col-12 {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-    color: #f5f5f5;
+    background-color: #2f2f2f;
 }
 
 header p {
     color: #f5f5f5;
 }
 
+/* SECTION #1: HEADER */
+
+.hero {
+    clear: left;
+    background: url("../images/cyclist-pov.jpeg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.hero h1, .hero p, .our-vision h1, .our-vision p {
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.the-problem h1, .the-problem p {
+    color: #2f2f2f;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
 /* SECTION #2: BULLET MESSAGES */
 
-.record-bg {
-    background-color: #e7e3db;
-
+.bullet-messages span {
+    color: #f5f5f5;
 }
 
-.reward-bg {
-    background-color: #d8d5cc;
-
-}
-
-.repeat-bg {
-    background-color: #d4cfc5;
+.bullet-messages i {
+    color: #f5f5f5;
 }
 
 .overlay-bg {
@@ -72,11 +75,11 @@ header p {
 }
 
 .the-problem h1 {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 .the-problem li {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 
@@ -95,14 +98,14 @@ header p {
 /* SECTION #4: ACTIVITY */
 
 .activity p {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 /* SECTION #5: OUR VISION */
 
 .our-vision {
     clear: left;
-    background: url("../images/change.jpg");
+    background: url("../images/runner.png");
     background-size: cover;
     background-position: center top;
 }
@@ -117,10 +120,8 @@ header p {
 
 /* SECTION #6: FREEBIE */
 
-
-
 .freebie h1, p {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 /* SECTION #7: FAQ */
@@ -128,19 +129,22 @@ header p {
 .faq h1 {
     color: #f8f0df;
 }
-.accordion-body {
-    background-color: #e7e3db;
+
+.faq-white {
+    background-color: #f5f5f5;
 }
 
-.accordion-button {
-    background-color: #d4cfc5;
+.freebie-bg {
+    background-color: #A7C7E7;
 }
+
+
 
 
 /* SECTION #8: FOOTER */
 
 .footer p {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 .footer p::before {
@@ -158,8 +162,12 @@ a {
 
 /* background colours */
 
+.white-bg {
+    background-color: #f5f5f5;
+}
+
 .blk-bg {
-    background-color: rgba(0, 0, 0);
+    background-color: #2f2f2f;
 }
 /* ------------- Media Queries BIG DESKTOP --------- -----*/
 
@@ -207,7 +215,7 @@ a {
 /* SECTION #1: HEADER */
 
 header {
-   min-height: 800px;
+   min-height: 200px;
 }
 
 header h1 {
@@ -220,6 +228,10 @@ header p {
 
 header .overlay-bg-padding {
    padding: 20px 0px 0px 0px;
+}
+
+.hero {
+    min-height: 800px;
 }
 
 /* SECTION #2: BULLET MESSAGES */
@@ -344,7 +356,7 @@ header .overlay-bg-padding {
 /* SECTION #1: HEADER */
 
 header {
-   min-height: 600px;
+   min-height: 180px;
 }
 
 header p {
@@ -353,6 +365,11 @@ header p {
 
 header .overlay-bg-padding {
    padding: 20px 0px 0px 0px;
+}
+
+
+.hero {
+    min-height: 800px;
 }
 
 /* SECTION #2: BULLET MESSAGES */
@@ -474,7 +491,7 @@ header .overlay-bg-padding {
 /* SECTION #1: HEADER */
 
 header {
-   min-height: 350px;
+   min-height: 150px;
 }
 
 header p {
@@ -484,6 +501,11 @@ header p {
 header .overlay-bg-padding {
    padding: 20px 0px 0px 0px;
 }
+
+
+.hero {
+    min-height: 600px;
+} 
 
 /* SECTION #2: BULLET MESSAGES */
 
@@ -541,7 +563,7 @@ header .overlay-bg-padding {
 
 .freebie {
     clear: left;
-    background: url("../images/e-book-mobile.png");
+    background: url("../images/e-book.png");
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
@@ -573,16 +595,22 @@ header .overlay-bg-padding {
     }
 
     h1 {
-         font-size: 22px;
+         font-size: 28px;
+         
     }
     
     
     h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     p {
-        font-size: 16px;
+        font-size: 20px;
+    }
+
+    h1, p {
+        margin: 0px -13px;
+        padding: 10px 20px;
     }
 
     .sign-up {
@@ -590,9 +618,13 @@ header .overlay-bg-padding {
         padding-bottom: 30px;
         text-align: center;
     }
+
+    .btn-default {
+        font-size: 20px;
+    }
     
     .text-vertical-center {
-        padding: 50px 0 10px 0;
+        padding: 0px 0 10px 0;
         
       }
     
@@ -602,45 +634,74 @@ header .overlay-bg-padding {
     }
 
 
-/* SECTION #1: HEADER */
+/* SECTION #0: HEADER */
 
 header {
-    min-height: 350px;
+    min-height: 80px;
 }
 
 header p {
-    padding-bottom: 30px;
+    padding-top: 17px;
+    padding-bottom: 2px;
+ }
+
+
+
+/* SECTION #1: HERO */
+.hero .top-space {
+    padding: 20px;
+}
+.hero .bottom-space {
+    padding: 60px;
 }
 
-header .overlay-bg-padding {
-    padding: 20px 0px 0px 0px;
+.hero {
+    min-height: 200px;
 }
+
+
+
 
 /* SECTION #2: BULLET MESSAGES */
 
-.record-bg {
-
-    padding: 20px 5px 15px 5px;
-
-}
-
-.reward-bg {
-    padding: 20px 5px 15px 5px;
-
-}
-
-.repeat-bg {
+.bullet-messages {
     padding: 20px 5px 15px 5px;
 }
+
+.bullet-messages span {
+    padding: 5px 2px;
+    font-size: 16px;
+    
+}
+
+.bullet-messages i {
+    padding: 3px;
+}
+
+.bullet-messages .col-sm-4 {
+    padding: 5px;
+}
+
 
 /* SECTION #3: THE PROBLEM */
+
+.the-problem .top-space {
+    padding: 30px;
+}
+.the-problem .bottom-space {
+    padding: 30px;
+}
 
 .the-problem {
     min-height: 350px;
 }
 
 .the-problem h1 {
-    padding: 80px 10px 40px 10px;
+    padding: 20px 10px;
+}
+
+.the-problem p {
+    padding: 0px;
 }
 
 .the-problem ul {
@@ -650,19 +711,36 @@ header .overlay-bg-padding {
 /* SECTION #4: ACTIVITY */
 .activity i {
     font-size: 75px;
+    padding: 35px 0px;
+}
+
+.activity p {
+    font-size: 15px;
+    padding: 3px;
 }
 
 .quote p {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* SECTION #5: OUR VISION */
+
+.our-vision .top-space {
+    padding: 50px;
+}
+.our-vision .bottom-space {
+    padding: 60px;
+}
 
 .our-vision {
     min-height: 400px;
 }
 
 .our-vision h1 {
+    padding: 10px 10px 10px 10px;
+}
+
+.our-vision p {
     padding: 0px 10px 10px 10px;
 }
 
@@ -672,13 +750,13 @@ header .overlay-bg-padding {
     min-height: 400px;
 }
 
-.mob-form-bg {
-    background-color: rgb(105, 123, 161);
+.freebie-text p {
+    font-size: 16px;
 }
 
 .freebie {
     clear: left;
-    background: url("../images/e-book-mobile.png");
+    background: url("../images/e-book.png");
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
@@ -686,7 +764,9 @@ header .overlay-bg-padding {
 
 /* SECTION #7: FAQ */
 
-
+.faq h1 {
+    font-size: 18px;
+}
 /* SECTION #8: FOOTER */
 .footer-links {
     padding: 20px;
@@ -694,6 +774,10 @@ header .overlay-bg-padding {
 
 .footer-links a {
     font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
 }
 
 }
