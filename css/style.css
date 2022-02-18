@@ -7,7 +7,11 @@ body {
     background-color: #2f2f2f;
 }
 
-h1, h3, p, li, a {
+h1,
+h3,
+p,
+li,
+a {
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -20,8 +24,8 @@ h1, h3, p, li, a {
     background-color: #fe6f27;
     color: #2f2f2f;
     border-color: 2f2f2f;
-    
-    }
+
+}
 
 header {
     background-color: #2f2f2f;
@@ -35,18 +39,23 @@ header p {
 
 .hero {
     clear: left;
-    background: url("../images/cyclist-pov.jpeg");
+    background: url("../images/cycle-pov.png");
     background-size: cover;
     background-position: center top;
 }
 
-.hero h1, .hero p, .our-vision h1, .our-vision p {
+.hero h1,
+.hero p,
+.our-vision h1,
+.our-vision p {
     color: #f5f5f5;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.the-problem h1, .the-problem p {
+
+.the-problem h1,
+.the-problem p {
     color: #2f2f2f;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(167, 199, 231, 0.4);
 }
 
 
@@ -92,7 +101,7 @@ header p {
 }
 
 .quote p {
-    color: #f5f5f5;
+    color: #2f2f2f;
 }
 
 /* SECTION #4: ACTIVITY */
@@ -107,7 +116,7 @@ header p {
     clear: left;
     background: url("../images/runner.png");
     background-size: cover;
-    background-position: center top;
+    background-position: right top;
 }
 
 .our-vision h1 {
@@ -120,7 +129,8 @@ header p {
 
 /* SECTION #6: FREEBIE */
 
-.freebie h1, p {
+.freebie h1,
+p {
     color: #2f2f2f;
 }
 
@@ -130,11 +140,9 @@ header p {
     color: #f8f0df;
 }
 
-.faq-white {
-    background-color: #f5f5f5;
-}
 
-.freebie-bg {
+
+.blue-bg {
     background-color: #A7C7E7;
 }
 
@@ -154,7 +162,7 @@ header p {
 a {
     text-decoration: none;
     color: #f5f5f5;
-    
+
 }
 
 
@@ -169,446 +177,35 @@ a {
 .blk-bg {
     background-color: #2f2f2f;
 }
+
 /* ------------- Media Queries BIG DESKTOP --------- -----*/
 
 @media only screen and (max-width: 3500px) {
-  
+
     .btn-media {
         background-color: #2ca3a7;
     }
 
-    h1 {
-        font-size: 50px;
-
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   ul {
-       font-size: 19px;
-   }
-
-   .sign-up {
-       padding-top: 50px;
-       padding-bottom: 75px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 200px;
-}
-
-header h1 {
-   padding-top: 230px;
-}
-
-header p {
-    padding-bottom: 350px;
- }
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-.hero {
-    min-height: 800px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 40px;
-}
-
-.reward-bg {
-    padding: 40px;
-}
-
-.repeat-bg {
-    padding: 40px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 800px;
-}
-
-.the-problem h1 {
-   padding: 320px 10px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 320px;
-}
-
-.quote p {
-    padding: 40px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 240px;
-   padding: 120px;
-}
-
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 800px;
-}
-
-.our-vision h1 {
-   padding: 200px 10px 120px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-   min-height: 800px;
-}
-
-
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-
-.footer-links {
-    padding: 35px;
-}
-
-.footer-links a {
-    font-size: 20px;
-}
-
-}
-
-/* ------------- Media Queries DESKTOP --------- -----*/
-
-@media only screen and (max-width: 1600px) {
-  
-    .btn-media {
-        background-color: #a72c2c;
+    .top-bar p {
+        font-size: 15px;
     }
 
-    h1 {
-        font-size: 50px;
 
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   .sign-up {
-    padding-top: 40px;
-    padding-bottom: 60px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 180px;
-}
-
-header p {
-   padding-bottom: 230px;
-}
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-
-.hero {
-    min-height: 800px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 30px;
-}
-
-.reward-bg {
-    padding: 30px;
-}
-
-.repeat-bg {
-    padding: 30px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 600px;
-}
-
-.the-problem h1 {
-   padding: 180px 10px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 200px;
-}
-
-.quote p {
-    padding: 40px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 140px;
-   padding: 70px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 600px;
-}
-
-.our-vision h1 {
-   padding: 180px 100px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-   min-height: 600px;
-}
-
-
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 30px;
-}
-
-.footer-links a {
-    font-size: 18px;
-}
-}
-
-  /* ------------- Media Queries Tablet --------- -----*/
-
-  @media only screen and (max-width: 992px) 
- {
-
-    .btn-media { 
-        background-color: #5052a5;
-    }
 
     h1 {
-        font-size: 30px;
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   .sign-up {
-    padding-top: 30px;
-    padding-bottom: 45px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 150px;
-}
-
-header p {
-   padding-bottom: 230px;
-}
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-
-.hero {
-    min-height: 600px;
-} 
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 20px;
-}
-
-.reward-bg {
-    padding: 20px;
-}
-
-.repeat-bg {
-    padding: 20px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 350px;
-}
-
-.the-problem h1 {
-   padding: 140px 70px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 230px;
-}
-
-.quote p {
-    padding: 20px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 140px;
-   padding: 30px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 400px;
-}
-
-.our-vision h1 {
-   padding: 10px 10px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.mob-form-bg {
-    background-color: rgb(105, 123, 161);
-}
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 25px;
-}
-
-.footer-links a {
-    font-size: 16px;
-}
-}
-
-
-
-
-
-/* ------------- Media Queries  ----------- Mobile only */
-
-@media only screen and (max-width: 576px) {
-
-    .btn-media { 
-        background-color: #26a52d;
+        font-size: 28px;
     }
 
-    h1 {
-         font-size: 28px;
-         
-    }
-    
-    
-    h3{
+    h3 {
         font-size: 20px;
     }
-    
+
     p {
         font-size: 20px;
     }
 
-    h1, p {
+    h1,
+    p {
         margin: 0px -13px;
         padding: 10px 20px;
     }
@@ -622,173 +219,822 @@ header .overlay-bg-padding {
     .btn-default {
         font-size: 20px;
     }
-    
+
     .text-vertical-center {
         padding: 0px 0 10px 0;
-        
-      }
-    
+
+    }
+
     img {
         width: 100%;
-        
+
     }
 
 
-/* SECTION #0: HEADER */
+    /* SECTION #0: HEADER */
 
-header {
-    min-height: 80px;
+    header {
+        min-height: 80px;
+    }
+
+    header p {
+        padding-top: 17px;
+        padding-bottom: 2px;
+    }
+
+
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 20px;
+    }
+
+    .hero .bottom-space {
+        padding: 60px;
+    }
+
+    .hero {
+        min-height: 200px;
+    }
+
+
+
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 20px 5px 15px 5px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 16px;
+
+    }
+
+    .bullet-messages i {
+        padding: 3px;
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 5px;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem .top-space {
+        padding: 30px;
+    }
+
+    .the-problem .bottom-space {
+        padding: 30px;
+    }
+
+    .the-problem {
+        min-height: 350px;
+    }
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    .the-problem ul {
+        padding-bottom: 100px;
+    }
+
+    /* SECTION #4: ACTIVITY */
+    .activity i {
+        font-size: 75px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    .quote p {
+        padding: 20px;
+    }
+
+    /* SECTION #5: OUR VISION */
+
+    .our-vision .top-space {
+        padding: 50px;
+    }
+
+    .our-vision .bottom-space {
+        padding: 60px;
+    }
+
+    .our-vision {
+        min-height: 400px;
+    }
+
+    .our-vision h1 {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .our-vision p {
+        padding: 0px 10px 10px 10px;
+    }
+
+    /* SECTION #6: FREEBIE */
+
+    .freebie {
+        min-height: 400px;
+    }
+
+    .freebie-text p {
+        font-size: 16px;
+    }
+
+    .freebie {
+        clear: left;
+        background: url("../images/report.png");
+        background-size: cover;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    /* SECTION #7: FAQ */
+
+    .faq h1 {
+        font-size: 18px;
+    }
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
 }
 
-header p {
-    padding-top: 17px;
-    padding-bottom: 2px;
- }
+/* ------------- Media Queries DESKTOP --------- -----*/
+
+@media only screen and (max-width: 1600px) {
+
+    .btn-media {
+        background-color: #a72c2c;
+    }
+
+    .top-bar p {
+        font-size: 30px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .hero h1, .hero p {
+        width: 80%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 30px 20px;
+    }
+
+    .sign-up {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-default {
+        font-size: 20px;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+
+    /* SECTION #0: HEADER */
+
+    header {
+        min-height: 80px;
+    }
+
+    header p {
+        padding-top: 17px;
+        padding-bottom: 2px;
+    }
 
 
 
-/* SECTION #1: HERO */
-.hero .top-space {
-    padding: 20px;
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 50px;
+    }
+
+    .hero .bottom-space {
+        padding: 135px;
+    }
+
+    .hero {
+        min-height: 200px;
+    }
+
+
+
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 20px 5px 15px 5px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 26px;
+
+    }
+
+    .bullet-messages i {
+        padding: 7px;
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 0px 108px;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem .top-space {
+        padding: 90px;
+    }
+
+    .the-problem .bottom-space {
+        padding: 165px;
+    }
+
+    .the-problem {
+        min-height: 350px;
+    }
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    .the-problem ul {
+        padding-bottom: 100px;
+    }
+
+    /* SECTION #4: ACTIVITY */
+    .activity i {
+        font-size: 135px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .quote p {
+        padding: 70px;
+        font-size: 28px;
+    }
+
+    .quote span {
+        font-size: 40px;
+    }
+
+    /* SECTION #5: OUR VISION */
+
+    .our-vision .top-space {
+        padding: 50px;
+    }
+
+    .our-vision .bottom-space {
+        padding: 60px;
+    }
+
+    .our-vision {
+        min-height: 400px;
+    }
+
+    .our-vision h1 {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .our-vision p {
+        padding: 0px 10px 10px 10px;
+    }
+
+    /* SECTION #6: FREEBIE */
+
+    .freebie {
+        min-height: 400px;
+    }
+
+    .freebie-text p {
+        font-size: 16px;
+    }
+
+    .freebie {
+        clear: left;
+        background: url("../images/report.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+
+    /* SECTION #7: FAQ */
+
+    .faq h1 {
+        font-size: 18px;
+    }
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+
 }
-.hero .bottom-space {
-    padding: 60px;
+
+/* ------------- Media Queries Tablet --------- -----*/
+
+@media only screen and (max-width: 992px) {
+
+    .btn-media {
+        background-color: #5052a5;
+    }
+
+    .top-bar p {
+        font-size: 30px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .hero h1, .hero p {
+        width: 80%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+    .sign-up {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-default {
+        font-size: 20px;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+
+    /* SECTION #0: HEADER */
+
+    header {
+        min-height: 80px;
+    }
+
+    header p {
+        padding-top: 17px;
+        padding-bottom: 2px;
+    }
+
+
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 50px;
+    }
+
+    .hero .bottom-space {
+        padding: 135px;
+    }
+
+    .hero {
+        min-height: 200px;
+    }
+
+
+
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 20px 5px 15px 5px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 26px;
+
+    }
+
+    .bullet-messages i {
+        padding: 7px;
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 0px 38px;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem .top-space {
+        padding: 50px;
+    }
+
+    .the-problem .bottom-space {
+        padding: 110px;
+    }
+
+    .the-problem {
+        min-height: 350px;
+    }
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    .the-problem ul {
+        padding-bottom: 100px;
+    }
+
+    /* SECTION #4: ACTIVITY */
+    .activity i {
+        font-size: 135px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .quote p {
+        padding: 20px;
+        font-size: 28px;
+    }
+
+    .quote span {
+        font-size: 40px;
+    }
+
+    /* SECTION #5: OUR VISION */
+
+    .our-vision .top-space {
+        padding: 50px;
+    }
+
+    .our-vision .bottom-space {
+        padding: 60px;
+    }
+
+    .our-vision {
+        min-height: 400px;
+    }
+
+    .our-vision h1 {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .our-vision p {
+        padding: 0px 10px 10px 10px;
+    }
+
+    /* SECTION #6: FREEBIE */
+
+    .freebie {
+        min-height: 400px;
+    }
+
+    .freebie-text p {
+        font-size: 16px;
+    }
+
+    .freebie {
+        clear: left;
+        background: url("../images/report.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 112%;
+    }
+
+    /* SECTION #7: FAQ */
+
+    .faq h1 {
+        font-size: 18px;
+    }
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+ 
 }
 
-.hero {
-    min-height: 200px;
+
+
+
+
+/* ------------- Media Queries  ----------- Mobile only */
+
+@media only screen and (max-width: 576px) {
+
+    .top-bar p {
+        font-size: 15px;
+    }
+
+
+    .btn-media {
+        background-color: #26a52d;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .hero h1, .hero p {
+        width: 100%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+
+    .sign-up {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-default {
+        font-size: 20px;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+
+    /* SECTION #0: HEADER */
+
+    header {
+        min-height: 80px;
+    }
+
+    header p {
+        padding-top: 17px;
+        padding-bottom: 2px;
+    }
+
+
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 20px;
+    }
+
+    .hero .bottom-space {
+        padding: 60px;
+    }
+
+    .hero {
+        min-height: 200px;
+    }
+
+
+
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 20px 5px 15px 5px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 16px;
+
+    }
+
+    .bullet-messages i {
+        padding: 3px;
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 5px;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem .top-space {
+        padding: 30px;
+    }
+
+    .the-problem .bottom-space {
+        padding: 30px;
+    }
+
+    .the-problem {
+        min-height: 350px;
+    }
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    .the-problem ul {
+        padding-bottom: 100px;
+    }
+
+    /* SECTION #4: ACTIVITY */
+    .activity i {
+        font-size: 75px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    .quote p {
+        padding: 20px;
+    }
+
+    /* SECTION #5: OUR VISION */
+
+    .our-vision .top-space {
+        padding: 50px;
+    }
+
+    .our-vision .bottom-space {
+        padding: 60px;
+    }
+
+    .our-vision {
+        min-height: 400px;
+    }
+
+    .our-vision h1 {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .our-vision p {
+        padding: 0px 10px 10px 10px;
+    }
+
+    /* SECTION #6: FREEBIE */
+
+    .freebie {
+        min-height: 400px;
+    }
+
+    .freebie-text p {
+        font-size: 16px;
+    }
+
+    .freebie {
+        clear: left;
+        background: url("../images/report.png");
+        background-size: cover;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    /* SECTION #7: FAQ */
+
+    .faq h1 {
+        font-size: 18px;
+    }
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
 }
 
-
-
-
-/* SECTION #2: BULLET MESSAGES */
-
-.bullet-messages {
-    padding: 20px 5px 15px 5px;
-}
-
-.bullet-messages span {
-    padding: 5px 2px;
-    font-size: 16px;
-    
-}
-
-.bullet-messages i {
-    padding: 3px;
-}
-
-.bullet-messages .col-sm-4 {
-    padding: 5px;
-}
-
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem .top-space {
-    padding: 30px;
-}
-.the-problem .bottom-space {
-    padding: 30px;
-}
-
-.the-problem {
-    min-height: 350px;
-}
-
-.the-problem h1 {
-    padding: 20px 10px;
-}
-
-.the-problem p {
-    padding: 0px;
-}
-
-.the-problem ul {
-    padding-bottom: 100px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-    font-size: 75px;
-    padding: 35px 0px;
-}
-
-.activity p {
-    font-size: 15px;
-    padding: 3px;
-}
-
-.quote p {
-    padding: 20px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision .top-space {
-    padding: 50px;
-}
-.our-vision .bottom-space {
-    padding: 60px;
-}
-
-.our-vision {
-    min-height: 400px;
-}
-
-.our-vision h1 {
-    padding: 10px 10px 10px 10px;
-}
-
-.our-vision p {
-    padding: 0px 10px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-    min-height: 400px;
-}
-
-.freebie-text p {
-    font-size: 16px;
-}
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-.faq h1 {
-    font-size: 18px;
-}
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 20px;
-}
-
-.footer-links a {
-    font-size: 14px;
-}
-
-footer p {
-    font-size: 12px;
-}
-
-}
-
-
+/* form */
 .form-control {
     margin: 5px;
 }
 
 .form-button {
     margin: 5px 0px 0px 100px;
+    color: #a72c2c;
 }
 
 .my-form-style {
@@ -796,11 +1042,6 @@ footer p {
     margin: auto;
 }
 
-
-
-
-
-
-
-
-
+.my-form-style p {
+    padding: 0px;
+}

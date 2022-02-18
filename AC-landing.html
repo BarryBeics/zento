@@ -16,7 +16,7 @@
 
 <body>
     <!-- SECTION #0: FIXED HEADER -->
-    <header class="sticky-top">
+    <header class="sticky-top top-bar">
         <div class="container-xl">
             <div class="row">
                 <div class="col">
@@ -52,8 +52,8 @@
         <div class="row bullet-messages">
             <div class="col col-sm-4"><span><i class="fas fa-mobile-alt"
                         aria-hidden="true"></span></i><span>RECORD</span></div>
-            <div class="col col-sm-4"><span><i class="fas fa-trophy"
-                        aria-hidden="true"></i></span><span>REWARD</span></div>
+            <div class="col col-sm-4"><span><i class="fas fa-trophy" aria-hidden="true"></i></span><span>REWARD</span>
+            </div>
             <div class="col col-sm-4"><span><i class="fas fa-redo" aria-hidden="true"></i></span><span>
                     REPEAT</span> </div>
         </div>
@@ -80,10 +80,10 @@
     </section>
     <!-- SECTION #4: QUOTE-->
     <section class="container-xl quote">
-        <div class="row blk-bg">
+        <div class="row blue-bg">
             <div class="col">
-                <p>“Active commuting is walking, running, cycling or using other human-powered means of transport to
-                    and/or from a place of work or study.”</p>
+                <p>  <span>“</span> Active commuting is walking, running, cycling or using other human-powered means of transport to
+                    and/or from a place of work or study.<span>”</span></p>
             </div>
         </div>
     </section>
@@ -129,10 +129,10 @@
         <div class="row text-center">
             <div class="top-space"></div>
             <div class="overlay-bg-padding">
-                <div class="col-12">
+                <div class="col-md-7">
                     <h1>BE A LEADER AND HELP SHAPE THE FUTURE</h1>
                 </div>
-                <div class="col-12">
+                <div class="col-md-7">
                     <p>Just a small commitment to change can improve our own health, that of others and even our planet.
                         Join us in building a community of active commuters and get rewarded for doing the right thing.
                     </p>
@@ -146,7 +146,7 @@
     <!-- SECTION #6: FREEBIE-->
 
     <section class="container-xl ">
-        <div class="row freebie-bg">
+        <div class="row blue-bg">
             <div class="col-sm-12 col-md-6 freebie"></div>
             <div class="col-sm-12 col-md-6 text-vertical-center freebie-text">
                 <h2 id="Sign_Up"></h2>
@@ -157,14 +157,37 @@
                 <!-- MEMBERMOUSE FORM-->
 
                 <div class="my-form-style">
-                    
-                        <form method="post" action="https://zento.ws/wp-content/plugins/membermouse/api/webform.php">
-                        <input type='text' class="form-control" name='first_name' placeholder="First Name" /> 
+
+                    <form method="post" action="https://zento.ws/wp-content/plugins/membermouse/api/webform.php">
+                        <input type='text' class="form-control" name='first_name' placeholder="First Name" />
                         <input type='text' class="form-control" name='email' placeholder="E-mail" />
-                        <input class="btn btn-default form-button" type='submit' name='submit' value='SIGN UP' />
+                        <div class="form-button" id="demo"></div>
+                        <div class="row">
+                            <div class="col-1"><input type="checkbox" id="myCheck" name="test"></div>
+                            <div class="col-11">
+                                <p>I agree to receiving emails about Active Commuters</p>
+                            </div>
+                        </div>
+
+                        <input class="btn btn-default form-button" type='submit' name='submit' value='SIGN UP'
+                            onclick="myFunction()" />
                         <input type='hidden' name='membership_level' value='1' />
 
                     </form>
+
+
+
+
+
+                    <script>
+                        function myFunction() {
+                            document.getElementById("myCheck").required = true;
+                            document.getElementById("demo").innerHTML = "Required property.";
+                        }
+                    </script>
+
+
+
                 </div>
                 <p>We take your privacy seriously and will never spam you, share or sell your data. You can also
                     unsubscribe from emails any time in 1 click. See PRIVACY for full details</p>
@@ -173,13 +196,13 @@
     </section>
     <!-- SECTION #7: FAQ-->
     <section class="container-xl faq">
-        <div class="row">
-            <div class="col-12">
-                <h1>Frequently Asked Questions</h1>
-            </div>
-            <div class="col-12 faq-white">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
+        <div class="row accordion accordion-flush" id="accordionFlushExample">
+                
+                    <div class="col-12">
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                    <!-- Question one-->
+                    <div class="accordion-item col-md-6 faq-white">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
@@ -193,7 +216,8 @@
                                 or cycle.</div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <!-- Question two-->
+                    <div class="accordion-item col-md-6 faq-white">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -206,36 +230,39 @@
                             <div class="accordion-body">A. Use your favourite fitness tracker e.g. Strava. </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Q. What sort of rewards can I expect?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A. Anything from a free cup of coffee to new trainers, a helmet
-                                or more! </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                Q. What will this cost me?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A. You’ll always have the option to record activity for free.
-                            </div>
-                        </div>
+                
+                <!-- Question three-->
+                <div class="accordion-item col-md-6 faq-white">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Q. What sort of rewards can I expect?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A. Anything from a free cup of coffee to new trainers, a helmet
+                            or more! </div>
                     </div>
                 </div>
-            </div>
+                <!-- Question four-->
+                <div class="accordion-item col-md-6 faq-white">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Q. What will this cost me?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A. You’ll always have the option to record activity for free.
+                        </div>
+                    </div>
+                
+           
+        </div>
         </div>
     </section>
     <!-- SECTION #8: FOOTER-->
