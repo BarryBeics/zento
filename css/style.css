@@ -37,6 +37,13 @@ header p {
 
 /* SECTION #1: HEADER */
 
+.logo {
+    clear: left;
+    background: url("../images/logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
 .hero {
     clear: left;
     background: url("../images/cycle-pov.png");
@@ -187,27 +194,34 @@ a {
     }
 
     .top-bar p {
-        font-size: 15px;
+        font-size: 30px;
     }
-
 
 
     h1 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 40px;
+        padding: 30px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .logo {
+        background-size: 80%;
+    }
+    .hero h1, .hero p {
+        width: 80%;
     }
 
     h1,
     p {
-        margin: 0px -13px;
-        padding: 10px 20px;
+        margin: auto;
+        padding: 30px 20px;
     }
 
     .sign-up {
@@ -246,11 +260,11 @@ a {
 
     /* SECTION #1: HERO */
     .hero .top-space {
-        padding: 20px;
+        padding: 50px;
     }
 
     .hero .bottom-space {
-        padding: 60px;
+        padding: 135px;
     }
 
     .hero {
@@ -268,27 +282,27 @@ a {
 
     .bullet-messages span {
         padding: 5px 2px;
-        font-size: 16px;
+        font-size: 26px;
 
     }
 
     .bullet-messages i {
-        padding: 3px;
+        padding: 7px;
     }
 
     .bullet-messages .col-sm-4 {
-        padding: 5px;
+        padding: 0px 108px;
     }
 
 
     /* SECTION #3: THE PROBLEM */
 
     .the-problem .top-space {
-        padding: 30px;
+        padding: 90px;
     }
 
     .the-problem .bottom-space {
-        padding: 30px;
+        padding: 165px;
     }
 
     .the-problem {
@@ -309,17 +323,22 @@ a {
 
     /* SECTION #4: ACTIVITY */
     .activity i {
-        font-size: 75px;
+        font-size: 135px;
         padding: 35px 0px;
     }
 
     .activity p {
-        font-size: 15px;
-        padding: 3px;
+        font-size: 20px;
+        padding: 30px;
     }
 
     .quote p {
-        padding: 20px;
+        padding: 70px;
+        font-size: 28px;
+    }
+
+    .quote span {
+        font-size: 40px;
     }
 
     /* SECTION #5: OUR VISION */
@@ -358,8 +377,9 @@ a {
         clear: left;
         background: url("../images/report.png");
         background-size: cover;
-        background-position: left top;
+        background-position: left;
         background-repeat: no-repeat;
+        background-size: 90%;
     }
 
     /* SECTION #7: FAQ */
@@ -380,6 +400,7 @@ a {
     footer p {
         font-size: 12px;
     }
+
 
 }
 
@@ -825,7 +846,10 @@ a {
     .top-bar p {
         font-size: 15px;
     }
-
+    
+    .logo {
+        background-size: 100%;
+    }
 
     .btn-media {
         background-color: #26a52d;

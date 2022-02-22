@@ -1,101 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 /* Font family & Sizing set here */
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2f2f2f;
 }
 
-h1, h3, p, li, a {
+h1,
+h3,
+p,
+li,
+a {
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 
 /* ------------- COLORS & BACKGROUND IMAGES ------------- */
 
 .btn-default {
-    background-color: #eebe4b;
-    color:#050100;
-    border-color: #050100;
-    
-    }
+    background-color: #fe6f27;
+    color: #2f2f2f;
+    border-color: 2f2f2f;
+
+}
+
+img {
+    width: 100%;
+}
 
 /* SECTION #1: HEADER */
 
-header {
+.logo {
     clear: left;
-    background: url("../images/header.png");
+    background: url("../images/ZENTO_logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    clear: left;
+    background: url("../images/zento-hero.jpg");
     background-size: cover;
     background-position: center top;
-
 }
 
-header .col-12 {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
+.hero h1, .our-vision h1, .the-problem h1, .how-it-works h1 {
     color: #f5f5f5;
-} 
-
-header p {
-    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+.hero p, .our-vision p, .the-problem p {
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.freetrial p, .how-it-works p {
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 /* SECTION #2: BULLET MESSAGES */
 
-.record-bg {
-    background-color: #e7e3db;
-
+.bullet-messages span {
+    color: #2f2f2f;
 }
 
-.reward-bg {
-    background-color: #d8d5cc;
-
+.block {
+   text-align: center;
 }
 
-.repeat-bg {
-    background-color: #d4cfc5;
-}
 
-.overlay-bg {
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
 /* SECTION #3: THE PROBLEM */
 
 .the-problem {
     clear: left;
-    background: url("../images/desk.png");
-    background-size: cover;
-    background-position: center top;
-}
-
-.the-problem h1 {
-    color: #050100;
+    background: url("../images/ZoomCalls.jpg");
+    background-repeat: no-repeat;
 }
 
 .the-problem li {
-    color: #050100;
+    color: #2f2f2f;
 }
+
 
 .how-it-works {
     clear: left;
-    background: url("../images/Q2QScreenshot.png");
-    background-size: cover;
+    background: url("../images/Q2Qmap.png");
     background-position: center top;
-}
-
-.how-it-works h1 {
-    color: #050100;
-}
-
-.how-it-works li {
-    color: #050100;
+    background-repeat: no-repeat;
 }
 
 
-/* SECTION #4: HOW IT WORKS */
 .graphic {
     display: block;
     margin-left: auto;
@@ -103,59 +106,64 @@ header p {
     text-align: center;
 }
 
-.quote p {
-    color: #f5f5f5;
+.feedback .graphic {
+    padding-top: 10px;
 }
 
-/* SECTION #4: ACTIVITY */
+.quote p {
+    color: #2f2f2f;
+}
+
 
 .activity p {
-    color: #050100;
+    color: #2f2f2f;
+}
+/* SECTION #5: FEEDBACK */
+
+
+.feedback p {
+    color: #2f2f2f;
+}
+.feedback em {
+    font-weight:bold;
+    font-style:normal;
+    color:rgb(44, 124, 177);
 }
 
-/* SECTION #5: OUR VISION */
+.feedback .checked {
+    color: orange;
+  }
 
-.our-vision {
-    clear: left;
-    background: url("../images/change.jpg");
-    background-size: cover;
-    background-position: center top;
-}
-
-.our-vision h1 {
-    color: #f8f0df;
-}
-
-.our-vision p {
-    color: #f8f0df;
-}
-
-/* SECTION #6: FREEBIE */
-
-
-
-.freebie h1, p {
-    color: #050100;
-}
-
-/* SECTION #7: FAQ */
+/* SECTION #6: FAQ */
 
 .faq h1 {
     color: #f8f0df;
 }
-.accordion-body {
-    background-color: #e7e3db;
+
+/* SECTION #7: FREE TRIAL */
+
+.freetrial h1,
+p {
+    color: #2f2f2f;
 }
 
-.accordion-button {
-    background-color: #d4cfc5;
+.freetrial {
+    clear: left;
+    background: url("../images/zento-free-trial.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.notice {
+    font-size: 0.8em;
 }
 
 
 /* SECTION #8: FOOTER */
 
 .footer p {
-    color: #050100;
+    color: #2f2f2f;
 }
 
 .footer p::before {
@@ -165,439 +173,87 @@ header p {
 a {
     text-decoration: none;
     color: #f5f5f5;
-    
+
 }
 
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
 
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 200;
+}
 
 
 /* background colours */
 
-.blk-bg {
-    background-color: rgba(0, 0, 0);
+.white1-bg {
+    background-color: #f2f2f2;
 }
-/* ------------- Media Queries BIG DESKTOP --------- -----*/
+
+.white2-bg {
+    background-color: #f5f5f5;
+}
+
+.white3-bg {
+    background-color: #f8f8f8;
+}
+
+.blk1-bg {
+    background-color: #1b1b1b;
+}
+
+.blk2-bg {
+    background-color: #252525;
+}
+
+.blk3-bg {
+    background-color: #2f2f2f;
+}
+
+/* ------------- Media Queries BIG DESKTOP --------- BLUE -----*/
 
 @media only screen and (max-width: 3500px) {
-  
+
     .btn-media {
         background-color: #2ca3a7;
     }
 
-    h1 {
-        font-size: 50px;
-
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   ul {
-       font-size: 19px;
-   }
-
-   .sign-up {
-       padding-top: 50px;
-       padding-bottom: 75px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 800px;
-}
-
-header h1 {
-   padding-top: 230px;
-}
-
-header p {
-    padding-bottom: 350px;
- }
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 40px;
-}
-
-.reward-bg {
-    padding: 40px;
-}
-
-.repeat-bg {
-    padding: 40px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 800px;
-}
-
-.the-problem h1 {
-   padding: 320px 10px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 320px;
-}
-
-.how-it-works p {
-    padding: 400px 40px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 240px;
-   padding: 120px;
-}
-
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 800px;
-}
-
-.our-vision h1 {
-   padding: 200px 10px 120px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-   min-height: 800px;
-}
-
-
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-
-.footer-links {
-    padding: 35px;
-}
-
-.footer-links a {
-    font-size: 20px;
-}
-
-}
-
-/* ------------- Media Queries DESKTOP --------- -----*/
-
-@media only screen and (max-width: 1600px) {
-  
-    .btn-media {
-        background-color: #a72c2c;
+    .logo {
+        background-size: 30%;
     }
 
     h1 {
-        font-size: 50px;
-
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   .sign-up {
-    padding-top: 40px;
-    padding-bottom: 60px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 600px;
-}
-
-header p {
-   padding-bottom: 230px;
-}
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 30px;
-}
-
-.reward-bg {
-    padding: 30px;
-}
-
-.repeat-bg {
-    padding: 30px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 600px;
-}
-
-.the-problem h1 {
-   padding: 180px 10px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 200px;
-}
-
-.how-it-works p {
-    padding: 300px 40px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 140px;
-   padding: 70px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 600px;
-}
-
-.our-vision h1 {
-   padding: 180px 100px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-   min-height: 600px;
-}
-
-
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 30px;
-}
-
-.footer-links a {
-    font-size: 18px;
-}
-}
-
-  /* ------------- Media Queries Tablet --------- -----*/
-
-  @media only screen and (max-width: 992px) 
- {
-
-    .btn-media { 
-        background-color: #5052a5;
+        font-size: 1em;
+        font-weight: 400;
     }
 
-    h1 {
-        font-size: 30px;
-   }
-   
-   
-   h3{
-       font-size: 24px;
-   }
-   
-   p {
-       font-size: 19px;
-   }
-
-   .sign-up {
-    padding-top: 30px;
-    padding-bottom: 45px;
-       text-align: center;
-   }
-   
-   .text-vertical-center {
-       padding: 80px 0 10px 0;
-       
-     }
-   
-   img {
-       width: 100%;
-       
-   }
-
-
-/* SECTION #1: HEADER */
-
-header {
-   min-height: 350px;
-}
-
-header p {
-   padding-bottom: 230px;
-}
-
-header .overlay-bg-padding {
-   padding: 20px 0px 0px 0px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-    padding: 20px;
-}
-
-.reward-bg {
-    padding: 20px;
-}
-
-.repeat-bg {
-    padding: 20px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-   min-height: 350px;
-}
-
-.the-problem h1 {
-   padding: 140px 70px 10px 10px;
-}
-
-.the-problem ul {
-   padding-bottom: 230px;
-}
-
-.how-it-works p {
-    padding: 200px 40px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-   font-size: 140px;
-   padding: 30px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-   min-height: 400px;
-}
-
-.our-vision h1 {
-   padding: 10px 10px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.mob-form-bg {
-    background-color: rgb(105, 123, 161);
-}
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book-mobile.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
-
-
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 25px;
-}
-
-.footer-links a {
-    font-size: 16px;
-}
-}
-
-
-
-
-
-/* ------------- Media Queries  ----------- Mobile only */
-
-@media only screen and (max-width: 576px) {
-
-    .btn-media { 
-        background-color: #26a52d;
+    h3 {
+        font-size: 1em;
+        font-weight: 500;
     }
 
-    h1 {
-         font-size: 22px;
-    }
-    
-    
-    h3{
-        font-size: 18px;
-    }
-    
     p {
-        font-size: 16px;
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    
+    .hero h1, .hero p {
+        width: 80%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 30px 20px;
     }
 
     .sign-up {
@@ -605,128 +261,661 @@ header .overlay-bg-padding {
         padding-bottom: 30px;
         text-align: center;
     }
-    
+
+    .btn-default {
+        font-size: 1em;
+    }
+
     .text-vertical-center {
-        padding: 50px 0 10px 0;
-        
-      }
-    
-    img {
-        width: 100%;
-        
+        padding: 0px 0 10px 0;
+
+    }
+
+    .block {
+        padding: 20px 8px;
+    }
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 50px;
+    }
+    .hero .middle-space {
+        padding: 215px;
+    }
+    .hero .bottom-space {
+        padding: 80px;
+    }
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 0px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 1em;
+
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 20px 108px;
     }
 
 
-/* SECTION #1: HEADER */
+    /* SECTION #3: THE PROBLEM */
 
-header {
-    min-height: 350px;
-}
+    .the-problem {
+        background-size: 210%;
+    }
 
-header p {
-    padding-bottom: 30px;
-}
-
-header .overlay-bg-padding {
-    padding: 20px 0px 0px 0px;
-}
-
-/* SECTION #2: BULLET MESSAGES */
-
-.record-bg {
-
-    padding: 20px 5px 15px 5px;
-
-}
-
-.reward-bg {
-    padding: 20px 5px 15px 5px;
-
-}
-
-.repeat-bg {
-    padding: 20px 5px 15px 5px;
-}
-
-/* SECTION #3: THE PROBLEM */
-
-.the-problem {
-    min-height: 350px;
-}
-
-.the-problem h1 {
-    padding: 80px 10px 40px 10px;
-}
-
-.the-problem ul {
-    padding-bottom: 100px;
-}
-
-/* SECTION #4: ACTIVITY */
-.activity i {
-    font-size: 75px;
-}
-
-.how-it-works p {
-    padding: 240px 40px;
-}
-
-/* SECTION #5: OUR VISION */
-
-.our-vision {
-    min-height: 400px;
-}
-
-.our-vision h1 {
-    padding: 0px 10px 10px 10px;
-}
-
-/* SECTION #6: FREEBIE */
-
-.freebie {
-    min-height: 400px;
-}
-
-.mob-form-bg {
-    background-color: rgb(105, 123, 161);
-}
-
-.freebie {
-    clear: left;
-    background: url("../images/e-book-mobile.png");
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
-/* SECTION #7: FAQ */
+    .the-problem .top-space {
+        padding: 90px;
+    }
+    .the-problem .middle-space {
+        padding: 215px;
+    }
+    .the-problem .bottom-space {
+        padding: 165px;
+    }
 
 
-/* SECTION #8: FOOTER */
-.footer-links {
-    padding: 20px;
-}
 
-.footer-links a {
-    font-size: 14px;
-}
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    .the-problem ul {
+        padding-bottom: 100px;
+    }
+
+    /* SECTION #4: HOW IT WORKS / ACTIVITY */
+    .activity i {
+        font-size: 135px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        padding: 30px;
+    }
+
+    .how-it-works p {
+        padding: 70px;
+    }
+
+    .how-it-works .top-space {
+        padding: 90px;
+    }
+
+    .how-it-works .bottom-space {
+        padding: 20px;
+    }
+
+    .how-it-works {
+        background-size: 100%;
+    }
+   
+/* SECTION #6: FAQ */
+
+.faq h1 {
+    font-size: 1em;
+} 
+
+    /* SECTION #7: FREE TRIAL */
+
+
+    .freetrial-text p {
+        font-size: 1em;
+    }
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 0px;
+    }
+
+    .footer-links a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 
 }
 
+/* ------------- Media Queries DESKTOP --------- RED -----*/
+
+@media only screen and (max-width: 1600px) {
+
+    .btn-media {
+        background-color: #a72c2c;
+    }
+
+    .logo {
+        background-size: 45%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        padding: 30px;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+
+    .hero h1, .hero p {
+        width: 80%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 20px 15px;
+    }
+
+    .sign-up {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-default {
+        font-size: 1.8em;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    .block {
+        padding: 25px 20px;
+    }
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 30px;
+    }
+    .hero .middle-space {
+        padding: 165px;
+    }
+    .hero .bottom-space {
+        padding: 25px;
+    }
+
+   
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 0px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 1.8em;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem {
+        background-size: 150%;
+        background-position: center bottom;
+    }
+    .the-problem .top-space {
+        padding: 20px;
+    }
+    .the-problem .middle-space {
+        padding: 250px;
+    }
+    .the-problem .bottom-space {
+        padding: 25px;
+    }
+
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 5px;
+    }
+
+
+    /* SECTION #4: HOW IT WORKS / ACTIVITY */
+    .activity i {
+        font-size: 135px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        padding: 30px;
+    }
+
+    .how-it-works p {
+        padding: 20px;
+    }
+
+
+    .how-it-works .top-space {
+        padding: 140px;
+    }
+
+    .how-it-works .bottom-space {
+        padding: 20px;
+    }
+
+    .how-it-works {
+        background-size: 100%;
+        background-position: center bottom;
+    }
+
+     /* SECTION #6: FAQ */
+
+     .faq h1 {
+        font-size: 1em;
+    }
+
+    /* SECTION #7: FREE TRIAL */
+
+    .freetrial-text p {
+        font-size: 1em;
+    }
+
+
+    /* SECTION #8: FOOTER */
+    .footer-links a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+
+}
+
+/* ------------- Media Queries Tablet --------- PURPLE -----*/
+
+@media only screen and (max-width: 992px) {
+
+    .btn-media {
+        background-color: #5052a5;
+    }
+
+    .logo {
+        background-size: 70%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 3em;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    h1, p {
+        width: 90%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+    .sign-up {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .btn-default {
+        font-size: 2em;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    .block {
+        padding: 20px 8px;
+    }
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 50px;
+    }
+    .hero .middle-space {
+        padding: 200px;
+    }
+    .hero .bottom-space {
+        padding: 35px;
+    }
+
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 0px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 2em;
+    }
+
+    .bullet-messages .col-sm-4 {
+        padding: 0px 38px;
+    }
+
+    .the-problem {
+        background-size: 210%;
+        background-position: center top;
+    }
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem .top-space {
+        padding: 40px;
+    }
+    .the-problem .middle-space {
+        padding: 250px;
+    }
+    .the-problem .bottom-space {
+        padding: 20px;
+    }
+
+
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 0px;
+    }
+
+    
+
+    /* SECTION #4: HOW IT WORKS / ACTIVITY */
+    .activity i {
+        font-size: 135px;
+        padding: 35px 0px;
+    }
+
+    .activity p {
+        padding: 10px;
+    } 
+
+    .how-it-works p {
+        padding: 10px;    
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+
+    .how-it-works .top-space {
+        padding: 330px;
+    }
+
+    .how-it-works .bottom-space {
+        padding: 20px;
+    }
+
+    .how-it-works {
+        background-size: 100%;
+    }
+
+    .how-it-works {
+        background-size: 120%;
+        background-position: right top;
+    }
+
+    .how-it-works p {
+        color: #f5f5f5;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    .feedback p {    
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+     /* SECTION #6: FAQ */
+
+     .faq h1 {
+        font-size: 2em;
+    }
+    .faq p {
+        font-size: 1.6em;
+    }
+
+    /* SECTION #7: FREE TRIAL */
+
+
+    .freetrial-text p {
+        font-size: 1em;
+    }
+
+    /* SECTION #8: FOOTER */
+
+    .footer-links a {
+        font-size: 2em;
+    }
 
 
 
+    footer p {
+        font-size: 1.2em;
+    }
+ 
+}
+
+
+/* ------------- Media Queries  ------  GREEN ----- Mobile only */
+
+@media only screen and (max-width: 576px) {
+    
+    .btn-media {
+        background-color: #26a52d;
+    }
+   
+    .logo {
+        background-size: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 400;
+    }
+ 
+    .hero h1, .hero p {
+        width: 100%;
+    }
+
+    h1,
+    p {
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+    .sign-up {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn-default {
+        font-size: 1em;
+    }
+
+    .text-vertical-center {
+        padding: 0px 0 10px 0;
+
+    }
+
+    .block {
+        padding: 20px 8px;
+    }
+
+    /* SECTION #1: HERO */
+    .hero .top-space {
+        padding: 10px;
+    }
+    .hero .middle-space {
+        padding: 80px;
+    }
+    .hero .bottom-space {
+        padding: 3px;
+    }
+
+    /* SECTION #2: BULLET MESSAGES */
+
+    .bullet-messages {
+        padding: 0px;
+    }
+
+    .bullet-messages span {
+        padding: 5px 2px;
+        font-size: 1em;
+    }
+
+
+    /* SECTION #3: THE PROBLEM */
+
+    .the-problem {
+        background-size: 210%;
+        background-position: center top;
+    }
+
+    .the-problem .top-space {
+        padding: 10px;
+    }
+    .the-problem .middle-space {
+        padding: 83px;
+    }
+    .the-problem .bottom-space {
+        padding: 10px;
+    }
+ 
+    .activity p {
+        border-bottom: #2f2f2f solid 1px;
+    }
+ 
+    .the-problem h1 {
+        padding: 20px 10px;
+    }
+
+    .the-problem p {
+        padding: 5px;
+    }
+
+    /* SECTION #4: HOW IT WORKS / ACTIVITY */
+    .activity i {
+        font-size: 75px;
+        padding: 0px;
+    }
+
+    .activity p {
+        padding: 10px;
+    } 
+
+    .how-it-works p {
+        padding: 10px;    
+          
+    }
+
+    .how-it-works .top-space {
+        padding: 145px;
+    }
+
+    .how-it-works .bottom-space {
+        padding: 5px;
+    }
+
+    .how-it-works {
+        background-size: 120%;
+        background-position: right top;
+    }
+
+    .how-it-works p {
+        color: #f5f5f5;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+  /* SECTION #6: FAQ */
+
+  .faq h1 {
+    font-size: 1em;
+}
+
+    /* SECTION #7: FREE TRIAL */
+    .freetrial p {
+        font-size: 1em;
+        text-align: left;
+        padding-left: 27px;
+    }
+
+
+    /* SECTION #8: FOOTER */
+    .footer-links {
+        padding: 0px;
+    }
+
+    .footer-links a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+
+}
+
+/* form */
+.form-control {
+    margin: 5px;
+}
+
+.form-button {
+    margin: 5px 0px 10px 100px;
+    
+}
 
 .my-form-style {
-    padding: 10px;
     width: 90%;
+    margin: auto;
 }
 
-
-
-
-
-
-
-
-
+.my-form-style p {
+    padding: 0px;
+}
