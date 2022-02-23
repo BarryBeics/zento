@@ -16,7 +16,13 @@ a {
     padding: 0px;
 }
 
+.check {
+    margin: 0px 20px;
+}
 
+.terms p {
+    text-align: left; 
+}
 
 /* ------------- COLORS & BACKGROUND IMAGES ------------- */
 
@@ -24,11 +30,6 @@ a {
     background-color: #fe6f27;
     color: #2f2f2f;
     border-color: 2f2f2f;
-
-}
-
-img {
-    width: 100%;
 }
 
 /* SECTION #1: HEADER */
@@ -48,19 +49,26 @@ img {
 }
 
 .hero h1, .our-vision h1, .the-problem h1, .how-it-works h1 {
-    color: #f5f5f5;
-    background-color: rgba(0, 0, 0, 0.7);
+    color: #2f2f2f;
+    background-color: rgba(248, 246, 246, 0.8);
 }
 
-.hero p, .our-vision p, .the-problem p {
-    color: #f5f5f5;
-    background-color: rgba(0, 0, 0, 0.8);
+.hero p, .our-vision p, .the-problem p, .freetrial p {
+    color: #2f2f2f;
+    background-color: rgba(248, 246, 246, 0.8);
+}
+
+.the-problem p {
+    width: 40%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1b1b1b;
+    font-weight: 500;
 }
 
 
-
-
-.freetrial p, .how-it-works p {
+.how-it-works p {
     color: #f5f5f5;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -107,7 +115,7 @@ img {
 }
 
 .feedback .graphic {
-    padding-top: 10px;
+    padding-top: 35px;
 }
 
 .quote p {
@@ -155,9 +163,7 @@ p {
     background-repeat: no-repeat;
 }
 
-.notice {
-    font-size: 0.8em;
-}
+
 
 
 /* SECTION #8: FOOTER */
@@ -173,7 +179,6 @@ p {
 a {
     text-decoration: none;
     color: #f5f5f5;
-
 }
 
 h1 {
@@ -191,6 +196,17 @@ p {
     font-weight: 200;
 }
 
+.terms a {
+    color: #0a58ca;
+}
+
+.ind {
+    text-indent: 50px;
+    color: #2f2f2f;
+    background-color: rgba(248, 246, 246, 0.8);
+    width: 80%;
+    padding: 6px 30px;
+  }
 
 /* background colours */
 
@@ -221,6 +237,10 @@ p {
 /* ------------- Media Queries BIG DESKTOP --------- BLUE -----*/
 
 @media only screen and (max-width: 3500px) {
+
+    img {
+        width: 65%;
+    }
 
     .btn-media {
         background-color: #2ca3a7;
@@ -396,7 +416,7 @@ p {
     }
 
     .logo {
-        background-size: 45%;
+        background-size: 30%;
     }
 
     h1 {
@@ -409,27 +429,26 @@ p {
     }
 
     p {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
-    .hero h1, .hero p {
+    .hero h1, .hero p, .the-problem h1 {
         width: 80%;
     }
 
     h1,
     p {
         margin: auto;
-        padding: 20px 15px;
     }
 
     .sign-up {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
     }
 
     .btn-default {
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 
     .text-vertical-center {
@@ -443,13 +462,13 @@ p {
 
     /* SECTION #1: HERO */
     .hero .top-space {
-        padding: 30px;
+        padding: 20px;
     }
     .hero .middle-space {
         padding: 165px;
     }
     .hero .bottom-space {
-        padding: 25px;
+        padding: 8px;
     }
 
    
@@ -473,13 +492,13 @@ p {
         background-position: center bottom;
     }
     .the-problem .top-space {
-        padding: 20px;
+        padding: 275px;
     }
     .the-problem .middle-space {
-        padding: 250px;
+        padding: 10px;
     }
     .the-problem .bottom-space {
-        padding: 25px;
+        padding: 10px;
     }
 
 
@@ -494,7 +513,7 @@ p {
 
     /* SECTION #4: HOW IT WORKS / ACTIVITY */
     .activity i {
-        font-size: 135px;
+        font-size: 215px;
         padding: 35px 0px;
     }
 
@@ -508,7 +527,7 @@ p {
 
 
     .how-it-works .top-space {
-        padding: 140px;
+        padding: 220px;
     }
 
     .how-it-works .bottom-space {
@@ -526,10 +545,19 @@ p {
         font-size: 1em;
     }
 
+    .faq p {
+        padding: 10px 0px;
+    }
+
     /* SECTION #7: FREE TRIAL */
 
     .freetrial-text p {
         font-size: 1em;
+    }
+
+    .notice p {
+        font-size: 0.9em;
+        padding: 10px;
     }
 
 
@@ -540,6 +568,7 @@ p {
 
     footer p {
         font-size: 1em;
+        padding: 10px;
     }
 
 
@@ -558,16 +587,16 @@ p {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 2.7em;
         padding: 15px;
     }
 
     p {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     h1, p {
@@ -588,7 +617,7 @@ p {
     }
 
     .btn-default {
-        font-size: 2em;
+        font-size: 1.2em;
     }
 
     .text-vertical-center {
@@ -667,7 +696,6 @@ p {
 
     .how-it-works p {
         padding: 10px;    
-        font-size: 1.6em;
         font-weight: 300;
     }
 
@@ -695,7 +723,6 @@ p {
     }
 
     .feedback p {    
-        font-size: 1.6em;
         font-weight: 300;
     }
 
@@ -705,7 +732,7 @@ p {
         font-size: 2em;
     }
     .faq p {
-        font-size: 1.6em;
+        padding: 0px;
     }
 
     /* SECTION #7: FREE TRIAL */
@@ -734,6 +761,10 @@ p {
 
 @media only screen and (max-width: 576px) {
     
+    img {
+        width: 70%;
+    }
+
     .btn-media {
         background-color: #26a52d;
     }
@@ -743,7 +774,7 @@ p {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 400;
     }
 
@@ -791,7 +822,7 @@ p {
         padding: 10px;
     }
     .hero .middle-space {
-        padding: 80px;
+        padding: 120px;
     }
     .hero .bottom-space {
         padding: 3px;
@@ -836,6 +867,7 @@ p {
 
     .the-problem p {
         padding: 5px;
+        width: 100%;
     }
 
     /* SECTION #4: HOW IT WORKS / ACTIVITY */
@@ -884,6 +916,10 @@ p {
         padding-left: 27px;
     }
 
+    .notice p {
+        font-size: 0.8em;
+        padding: 0px;
+    }
 
     /* SECTION #8: FOOTER */
     .footer-links {
@@ -907,7 +943,7 @@ p {
 }
 
 .form-button {
-    margin: 5px 0px 10px 100px;
+    margin: 15px 0px 15px 165px;
     
 }
 
