@@ -3,7 +3,7 @@
 /* Font family & Sizing set here */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #2f2f2f;
+    background-color: #d4cfcf
 }
 
 h1,
@@ -36,7 +36,7 @@ a {
 
 .logo {
     clear: left;
-    background: url("../images/ZENTO_logo.png");
+    background: url("../images/zento.png");
     background-position: left center;
     background-repeat: no-repeat;
 }
@@ -58,13 +58,15 @@ a {
     background-color: rgba(248, 246, 246, 0.8);
 }
 
-.the-problem p {
-    width: 40%;
-}
 
-.accordion-button:not(.collapsed) {
+
+.accordion-button {
     color: #1b1b1b;
     font-weight: 500;
+}
+
+.accordion-body {
+    background-color: #c7c7c7;
 }
 
 
@@ -247,33 +249,34 @@ p {
     }
 
     .logo {
-        background-size: 30%;
+        background-size: 25%;
     }
 
     h1 {
-        font-size: 1em;
-        font-weight: 400;
+        font-size: 3.2em;
+        font-weight: 500;
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 2.5em;
         font-weight: 500;
     }
 
     p {
-        font-size: 1em;
-        font-weight: 200;
+        font-size: 1.6em;
+        font-weight: 300;
     }
 
     
-    .hero h1, .hero p {
+    .hero h1, .hero p, .the-problem h1 {
         width: 80%;
+        padding: 0px 0px 10px 0px:
     }
 
     h1,
     p {
         margin: auto;
-        padding: 30px 20px;
+    padding: 10px;
     }
 
     .sign-up {
@@ -283,7 +286,7 @@ p {
     }
 
     .btn-default {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .text-vertical-center {
@@ -292,18 +295,18 @@ p {
     }
 
     .block {
-        padding: 20px 8px;
+        padding: 25px 20px;
     }
 
     /* SECTION #1: HERO */
     .hero .top-space {
-        padding: 50px;
+        padding: 30px;
     }
     .hero .middle-space {
-        padding: 215px;
+        padding: 0px;
     }
     .hero .bottom-space {
-        padding: 80px;
+        padding:280px;
     }
 
     /* SECTION #2: BULLET MESSAGES */
@@ -314,32 +317,31 @@ p {
 
     .bullet-messages span {
         padding: 5px 2px;
-        font-size: 1em;
+        font-size: 1.8em;
 
     }
 
-    .bullet-messages .col-sm-4 {
-        padding: 20px 108px;
-    }
-
-
+    
     /* SECTION #3: THE PROBLEM */
 
     .the-problem {
-        background-size: 210%;
+        background-size: 150%;
+        background-position: center bottom;
     }
 
     .the-problem .top-space {
-        padding: 90px;
+        padding: 275px;
     }
     .the-problem .middle-space {
-        padding: 215px;
+        padding: 10px;
     }
     .the-problem .bottom-space {
-        padding: 165px;
+        padding: 10px;
     }
 
-
+    .the-problem p {
+        width: 60%;
+    }
 
     .the-problem h1 {
         padding: 20px 10px;
@@ -349,13 +351,10 @@ p {
         padding: 0px;
     }
 
-    .the-problem ul {
-        padding-bottom: 100px;
-    }
 
     /* SECTION #4: HOW IT WORKS / ACTIVITY */
     .activity i {
-        font-size: 135px;
+        font-size: 215px;
         padding: 35px 0px;
     }
 
@@ -364,11 +363,11 @@ p {
     }
 
     .how-it-works p {
-        padding: 70px;
+        padding: 20px;
     }
 
     .how-it-works .top-space {
-        padding: 90px;
+        padding: 220px;
     }
 
     .how-it-works .bottom-space {
@@ -377,13 +376,18 @@ p {
 
     .how-it-works {
         background-size: 100%;
+        background-position: center bottom;
     }
    
 /* SECTION #6: FAQ */
 
 .faq h1 {
-    font-size: 1em;
+    font-size: 1.7em;
 } 
+
+.faq p {
+    padding: 10px 0px;
+}
 
     /* SECTION #7: FREE TRIAL */
 
@@ -391,18 +395,24 @@ p {
     .freetrial-text p {
         font-size: 1em;
     }
-
-    /* SECTION #8: FOOTER */
-    .footer-links {
-        padding: 0px;
+    .notice p {
+        font-size: 0.9em;
+        padding: 10px;
     }
 
+    .form-button {
+        margin: 15px 0px 15px 165px;
+        
+    }
+
+    /* SECTION #8: FOOTER */
     .footer-links a {
         font-size: 1em;
     }
 
     footer p {
         font-size: 1em;
+        padding: 10px;
     }
 
 }
@@ -416,7 +426,7 @@ p {
     }
 
     .logo {
-        background-size: 30%;
+        background-size: 25%;
     }
 
     h1 {
@@ -434,6 +444,7 @@ p {
 
     .hero h1, .hero p, .the-problem h1 {
         width: 80%;
+        padding: 0px 0px 10px 0px;
     }
 
     h1,
@@ -465,10 +476,10 @@ p {
         padding: 20px;
     }
     .hero .middle-space {
-        padding: 165px;
+        padding: 0px;
     }
     .hero .bottom-space {
-        padding: 8px;
+        padding: 173px;
     }
 
    
@@ -500,7 +511,9 @@ p {
     .the-problem .bottom-space {
         padding: 10px;
     }
-
+    .the-problem p {
+        width: 40%;
+    }
 
     .the-problem h1 {
         padding: 20px 10px;
@@ -560,6 +573,11 @@ p {
         padding: 10px;
     }
 
+    .form-button {
+        margin: 15px 0px 15px 165px;
+        
+    }
+
 
     /* SECTION #8: FOOTER */
     .footer-links a {
@@ -583,7 +601,7 @@ p {
     }
 
     .logo {
-        background-size: 70%;
+        background-size: 30%;
     }
 
     h1 {
@@ -672,7 +690,9 @@ p {
     .the-problem .bottom-space {
         padding: 20px;
     }
-
+    .the-problem p {
+        width: 40%;
+    }
 
     .the-problem h1 {
         padding: 20px 10px;
@@ -742,6 +762,11 @@ p {
         font-size: 1em;
     }
 
+    .form-button {
+        margin: 15px 0px 15px 165px;
+        
+    }
+
     /* SECTION #8: FOOTER */
 
     .footer-links a {
@@ -784,12 +809,13 @@ p {
     }
 
     p {
-        font-size: 1em;
+        font-size: 0.98em;
         font-weight: 400;
     }
  
     .hero h1, .hero p {
         width: 100%;
+        padding: 10px;
     }
 
     h1,
@@ -856,7 +882,9 @@ p {
     .the-problem .bottom-space {
         padding: 10px;
     }
- 
+    .the-problem p {
+        width: 40%;
+    }
     .activity p {
         border-bottom: #2f2f2f solid 1px;
     }
@@ -918,7 +946,7 @@ p {
 
     .notice p {
         font-size: 0.8em;
-        padding: 0px;
+        padding: 10px;
     }
 
     /* SECTION #8: FOOTER */
@@ -942,10 +970,6 @@ p {
     margin: 5px;
 }
 
-.form-button {
-    margin: 15px 0px 15px 165px;
-    
-}
 
 .my-form-style {
     width: 90%;
